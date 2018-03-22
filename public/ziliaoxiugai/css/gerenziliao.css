@@ -1,0 +1,35 @@
+a{
+	text-decoration:none;
+}
+
+.right2{
+	
+	margin-top:50px;
+	margin-left:150px;
+	width:800px;
+	height:250px;
+	
+	border-top:1px solid #000;
+	line-height:30px;
+}
+
+
+.yonghuming{
+	
+	width:600px;
+	
+	height:30;
+	margin-top:5;
+	
+}
+.yonghuzi{
+	float:left;
+	width:100px;
+	font-size:14px;
+	
+
+}
+.yonghuming1{
+	margin-top:10px;
+	margin-left:100px;
+}

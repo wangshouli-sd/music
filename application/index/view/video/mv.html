@@ -1,0 +1,1283 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="咪咕音乐,彩铃,mp3,高品质音乐,在线听歌,音乐人,新歌首发,热门歌单,排行榜">
+	<meta name="description" content="好音乐伴您每一天,发现最in的音乐,推荐最适合您的咪咕歌曲唱片和音乐人,打造基于音乐产品的体验和互动。">
+	<title>唯爱音乐-放肆听,趣玩乐-唯爱文化</title>
+	<link rel="stylesheet" href="/css/vendor_3.css">
+	<link rel="stylesheet" href="/css/music.css">
+
+
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?ec5a5474d9d871cb3d82b846d861979d";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+</head>
+<body >
+	<!--头部-->
+	
+
+
+<body class="index-page">
+
+
+
+<!-- <div id="headBox">
+<div id="J_Header">
+    <div class="container">
+
+        <a class="header-logo" href="#">
+            <img src="/picture/logo.jpg" alt="logo">
+        </a>
+
+
+        
+        <ul class="header-nav-left">
+            <li>
+                 <a href="/index/index/index">首页</a>
+            </li>
+            <li>
+                <a href="/index/video/mv">MV</a>
+            </li>
+            <li>
+                <a href="/index/video/newmusic">新歌</a>
+            </li>
+            <li>
+                <a href="/index/video/remen">热门</a>
+            </li>
+            <li>
+                <a href="/index/video/zhuanji">专辑</a>
+            </li>
+            
+           
+            <div class="nav-animate"></div>
+        </ul>
+
+
+
+
+
+
+登录页面
+
+
+
+
+
+
+
+
+如果登陆成功
+
+        
+{if empty($yonghu)}
+
+
+        <ul class="header-nav-right">
+            
+            <li>
+               
+                <a id="J_Login" href="/index/user/login">登录</a>
+                <a  href="/index/user/login">登录</a>
+            </li>
+
+            <li>
+                <a  href="/index/user/register">注册</a> 
+            </li>
+
+
+        </ul>
+
+	{else}	
+
+		<div id="J_UserAvatar" class="user-avatar" style="display: block;">
+
+        用户头像
+            <a class="user-avatar-img" href="/index/user/login" target="_blank">
+                  <img src="/picture/logo.jpg" id="J_UserAvatarImg" alt="logo"> 
+                 <img src="" width="30" height="30" id="J_UserAvatarImg"></a>
+            </a>
+
+            <div class="user-links">
+                <span class="user-links-icon"></span>
+                <a href="/index/user/pinglun" target="_blank">
+                    <span class="comment"></span>我的评论
+                </a>
+                <a href="/index/user/gerenziliao" target="_blank">
+                    <span class="set"></span>账号设置
+                </a>
+                
+                <a href="clear">
+                    <span class="signOut"></span>退出登录
+                </a>
+            </div>
+        </div>
+
+{/if}
+
+
+
+前台 搜索 框
+
+
+        <form class="header-search" action="/index/video/sousuo" targset="_blank">
+            <input type="text" name="content" placeholder="无问西东" />
+            <input type="hidden" name="type" value="allLobby" />
+            <input type="hidden" name="_ch" value="allLobby">
+           <a href="/index/sousuo/sousuo"> <button type="submit"></button></a>
+        </form>
+
+
+
+
+
+
+        第三方登录地址
+       <input id="J_LoginUrl" type="hidden" value="https://passport.migu.cn/login?sourceid=208003" />
+       
+        评论接口前缀，用于准线环境 ，准线环境需要修改，如/beta_
+       <input id="js_comment_api_prefix" type="hidden" value="" />
+    </div>
+</div>
+</div>
+
+
+
+右侧悬浮按钮
+<a href="/index/user/pinglun" target="_blank" class="go-questionnaire" title="参与调研">参与<br>评论</a>
+<a href="javascript:void(0);" id="J_GotoTop" class="upIcon" title="回到顶部">&nbsp;</a>
+<div class="search-float" id="js_float_search">
+
+
+    <a href="javascript:void(0);" class="search-float-btn js_float_search_btn" title="搜索">&nbsp;</a>
+    <div class="search-float-form">
+
+        <form method="get" action="/index/video/sousuo" target="_blank" class="js_float_search_form">
+            <input type="hidden" name="type" value="allLobby">
+            <a href="javascript:void(0);" class="search-float-submit js_float_search_submit" title="提交">&nbsp;</a>
+            <input type="text" name="content"  autocomplete="off" class="search-float-input js_float_search_input" placeholder="输入搜索关键字">
+            <input type="hidden" name="_ch" value="">
+            <a href="javascript:void(0);" class="search-float-close js_float_search_close" title="关闭">&nbsp;</a>
+        </form>
+
+    </div>
+</div>
+
+
+
+外链loading
+<div id="js_external_link_loading" class="external-link-loading">
+    <div class="js_external_animate external-animate music">
+        静态图片
+        <div class="bg-image"></div>
+        星光
+        <div class="star-image step-1"></div>
+        <div class="star-image step-2"></div>
+        文字盒子
+        <div class="text-container">
+            <span class="text-item text-1"></span>
+            <span class="text-item text-2"></span>
+            <span class="text-item text-3"></span>
+            <span class="text-item text-4"></span>
+            <span class="text-item text-5"></span>
+            <span class="text-item text-6"></span>
+            <span class="text-item text-7"></span>
+            <span class="text-item text-8"></span>
+            <span class="text-item text-9"></span>
+            <span class="text-item text-10"></span>
+            <span class="text-item text-11"></span>
+        </div>
+    </div>
+</div>
+HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+WARNING: Respond.js doesn't work if you view the page via file://
+[if lt IE 9]>
+    <script src="/js/html5_2.js"></script>
+<![endif]		
+	banner
+	<div id="J_Banner" class="J_Banner banner">
+		<div class="hd container">
+		
+		右侧的轮播导航
+		
+			<ul>
+				
+				<li>
+					<a href="#" target="_blank" title="" data-stats="KO年兽赚大运|^|官网首页-banner|^|0">
+					<h2 title="KO年兽赚大运">KO年兽赚大运</h2> 
+					<span title="赢888元红包">赢888元红包</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="#" target="_blank" title="" data-stats="唯爱官网优雅升级|^|官网首页-banner|^|1">
+					<h2 title="唯爱官网优雅升级">唯爱官网优雅升级</h2> 
+					<span title="诚邀您体验">诚邀您体验</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="#" target="_blank" title="" data-stats="动画电影大赏|^|官网首页-banner|^|2">
+					<h2 title="动画电影大赏">动画电影大赏</h2> 
+					<span title="最美的成人童话">最美的成人童话</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="#" target="_blank" title="" data-stats="唯爱杯网络文学大赛|^|官网首页-banner|^|3">
+					<h2 title="唯爱杯网络文学大赛">唯爱杯网络文学大赛</h2> 
+					<span title="等你来战">等你来战</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="#" target="_blank" title="" data-stats="莫比斯人工智能耳机|^|官网首页-banner|^|4">
+					<h2 title="莫比斯人工智能耳机">莫比斯人工智能耳机</h2> 
+					<span title="立即了解">立即了解</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="#" target="_blank" title="" data-stats="流量不够找小时包|^|官网首页-banner|^|5">
+					<h2 title="流量不够找小时包">流量不够找小时包</h2> 
+					<span title="掌上任我嗨">掌上任我嗨</span>
+					</a>
+				</li>
+				
+				</ul>
+		</div>
+		<div class="bd">
+		右侧的轮播导航
+			<ul>
+			
+				<li>
+					<a href="#" target="_blank" data-stats="KO年兽赚大运|^|官网首页-banner|^|0">
+						<img src="/picture/20180122094019402017_2.png" />
+					</a>
+				</li>
+				
+				<li>
+					<a href="#" target="_blank" data-stats="唯爱官网优雅升级|^|官网首页-banner|^|1">
+						<img src="/picture/20171225174649467681_2.jpg" />
+					</a>
+				</li>
+				
+				<li>
+					<a href="#" target="_blank" data-stats="动画电影大赏|^|官网首页-banner|^|2">
+						<img src="/picture/20180102144746474967_2.jpg" />
+					</a>
+				</li>
+				
+				<li>
+					<a href="#" target="_blank" data-stats="唯爱杯网络文学大赛|^|官网首页-banner|^|3">
+						<img src="/picture/20171205181229127870_2.jpg" />
+					</a>
+				</li>
+				
+				<li>
+					<a href="#" target="_blank" data-stats="莫比斯人工智能耳机|^|官网首页-banner|^|4">
+						<img src="/picture/20171121153923391910_2.jpg" />
+					</a>
+				</li>
+				
+				<li>
+					<a href="#" target="_blank" data-stats="流量不够找小时包|^|官网首页-banner|^|5">
+						<img src="/picture/20171122161322131621_2.jpg" />
+					</a>
+				</li>
+				
+				
+			</ul>
+		</div>
+	</div>
+
+
+
+
+
+
+ -->
+
+{include file="index/top" /}
+
+
+
+
+
+
+
+
+
+
+
+	<div class="container">
+	
+		<!-- 分类 start -->
+		<div class="personal-type-container clearfix">
+			
+			<div class="personal-type-item type-1">
+				<h2 class="type-title">语言</h2>
+				<ul class="type-list clearfix">
+					
+					<li class="type-item">
+					<a href="http://www.migu.cn/music/list.html?firstTag=%E8%AF%AD%E8%A8%80&tag=%E5%9B%BD%E8%AF%AD&page=1">国语</a>
+					</li>
+					
+					<li class="type-item">
+					<a href="http://www.migu.cn/music/list.html?firstTag=%E8%AF%AD%E8%A8%80&tag=%E7%B2%A4%E8%AF%AD&page=1">粤语</a>
+					</li>
+					
+					<li class="type-item">
+					<a href="http://www.migu.cn/music/list.html?firstTag=%E8%AF%AD%E8%A8%80&tag=%E8%8B%B1%E8%AF%AD&page=1">英语</a>
+					</li>
+					
+					<li class="type-item">
+					<a href="http://www.migu.cn/music/list.html?firstTag=%E8%AF%AD%E8%A8%80&tag=%E6%97%A5%E8%AF%AD&page=1">日语</a>
+					</li>
+					
+					<li class="type-item">
+					<a href="http://www.migu.cn/music/list.html?firstTag=%E8%AF%AD%E8%A8%80&tag=%E9%9F%A9%E8%AF%AD&page=1">韩语</a>
+					</li>
+					
+					<li class="type-item">
+					<a href="http://www.migu.cn/music/list.html?firstTag=%E8%AF%AD%E8%A8%80&tag=%E6%B3%95%E8%AF%AD&page=1">法语</a>
+					</li>
+					
+					<li class="type-item">
+					<a href="http://www.migu.cn/music/list.html?firstTag=%E8%AF%AD%E8%A8%80&tag=%E8%A5%BF%E7%8F%AD%E7%89%99%E8%AF%AD&page=1">西班牙语</a>
+					</li>
+					
+				</ul>
+			</div>
+			
+			<div class="personal-type-item type-2">
+				<h2 class="type-title">风格</h2>
+				<ul class="type-list clearfix">
+					
+					<li class="type-item">
+					<a href="http://www.migu.cn/music/list.html?firstTag=%E9%A3%8E%E6%A0%BC&tag=%E6%B5%81%E8%A1%8C&page=1">流行</a>
+					</li>
+					
+					<li class="type-item">
+					<a href="http://www.migu.cn/music/list.html?firstTag=%E9%A3%8E%E6%A0%BC&tag=%E6%91%87%E6%BB%9A&page=1">摇滚</a>
+					</li>
+					
+					<li class="type-item">
+					<a href="http://www.migu.cn/music/list.html?firstTag=%E9%A3%8E%E6%A0%BC&tag=%E7%94%B5%E5%AD%90&page=1">电子</a>
+					</li>
+					
+					<li class="type-item">
+					<a href="http://www.migu.cn/music/list.html?firstTag=%E9%A3%8E%E6%A0%BC&tag=%E6%B0%91%E8%B0%A3&page=1">民谣</a>
+					</li>
+					
+					<li class="type-item">
+					<a href="http://www.migu.cn/music/list.html?firstTag=%E9%A3%8E%E6%A0%BC&tag=%E6%B5%81%E8%A1%8C%E8%AF%B4%E5%94%B1&page=1">流行说唱</a>
+					</li>
+					
+					<li class="type-item">
+					<a href="http://www.migu.cn/music/list.html?firstTag=%E9%A3%8E%E6%A0%BC&tag=%E5%98%BB%E5%93%88&page=1">嘻哈</a>
+					</li>
+					
+					<li class="type-item">
+					<a href="http://www.migu.cn/music/list.html?firstTag=%E9%A3%8E%E6%A0%BC&tag=%E7%88%B5%E5%A3%AB&page=1">爵士</a>
+					</li>
+					
+				</ul>
+			</div>
+			
+			<div class="personal-type-item type-3">
+				<h2 class="type-title">主题</h2>
+				<ul class="type-list clearfix">
+					
+					<li class="type-item">
+					<a href="http://www.migu.cn/music/list.html?firstTag=%E4%B8%BB%E9%A2%98&tag=%E7%94%B5%E5%BD%B1%E9%9F%B3%E4%B9%90&page=1">电影音乐</a>
+					</li>
+					
+					<li class="type-item">
+					<a href="http://www.migu.cn/music/list.html?firstTag=%E4%B8%BB%E9%A2%98&tag=%E9%9D%92%E6%98%A5%E6%A0%A1%E5%9B%AD&page=1">青春校园</a>
+					</li>
+					
+					<li class="type-item">
+					<a href="http://www.migu.cn/music/list.html?firstTag=%E4%B8%BB%E9%A2%98&tag=%E5%8E%9F%E5%88%9B%E6%AD%8C%E6%9B%B2&page=1">原创歌曲</a>
+					</li>
+					
+					<li class="type-item">
+					<a href="http://www.migu.cn/music/list.html?firstTag=%E4%B8%BB%E9%A2%98&tag=%E6%B8%B8%E6%88%8F%E9%9F%B3%E4%B9%90&page=1">游戏音乐</a>
+					</li>
+					
+					<li class="type-item">
+					<a href="http://www.migu.cn/music/list.html?firstTag=%E4%B8%BB%E9%A2%98&tag=%E5%8A%A8%E6%BC%AB%E9%9F%B3%E4%B9%90&page=1">动漫音乐</a>
+					</li>
+					
+				</ul>
+			</div>
+			
+			<div class="personal-type-item type-4">
+				<h2 class="type-title">乐器</h2>
+				<ul class="type-list clearfix">
+					
+					<li class="type-item">
+					<a href="http://www.migu.cn/music/list.html?firstTag=%E4%B9%90%E5%99%A8&tag=%E9%92%A2%E7%90%B4&page=1">钢琴</a>
+					</li>
+					
+					<li class="type-item">
+					<a href="http://www.migu.cn/music/list.html?firstTag=%E4%B9%90%E5%99%A8&tag=%E5%90%89%E4%BB%96&page=1">吉他</a>
+					</li>
+					
+					<li class="type-item">
+					<a href="http://www.migu.cn/music/list.html?firstTag=%E4%B9%90%E5%99%A8&tag=%E5%B0%8F%E6%8F%90%E7%90%B4&page=1">小提琴</a>
+					</li>
+					
+					<li class="type-item">
+					<a href="http://www.migu.cn/music/list.html?firstTag=%E4%B9%90%E5%99%A8&tag=%E8%90%A8%E5%85%8B%E6%96%AF%E7%AE%A1&page=1">萨克斯管</a>
+					</li>
+					
+					<li class="type-item">
+					<a href="http://www.migu.cn/music/list.html?firstTag=%E4%B9%90%E5%99%A8&tag=%E5%8F%A3%E7%90%B4&page=1">口琴</a>
+					</li>
+					
+					<li class="type-item">
+					<a href="http://www.migu.cn/music/list.html?firstTag=%E4%B9%90%E5%99%A8&tag=%E4%BA%8C%E8%83%A1&page=1">二胡</a>
+					</li>
+					
+				</ul>
+			</div>
+			
+			<div class="personal-type-item type-5">
+				<h2 class="type-title">人声</h2>
+				<ul class="type-list clearfix">
+					
+					<li class="type-item">
+					<a href="http://www.migu.cn/music/list.html?firstTag=%E4%BA%BA%E5%A3%B0&tag=%E7%94%B7%E9%AB%98%E9%9F%B3&page=1">男高音</a>
+					</li>
+					
+					<li class="type-item">
+					<a href="http://www.migu.cn/music/list.html?firstTag=%E4%BA%BA%E5%A3%B0&tag=%E5%A5%B3%E9%AB%98%E9%9F%B3&page=1">女高音</a>
+					</li>
+					
+					<li class="type-item">
+					<a href="http://www.migu.cn/music/list.html?firstTag=%E4%BA%BA%E5%A3%B0&tag=%E7%94%B7%E4%B8%AD%E9%9F%B3&page=1">男中音</a>
+					</li>
+					
+					<li class="type-item">
+					<a href="http://www.migu.cn/music/list.html?firstTag=%E4%BA%BA%E5%A3%B0&tag=%E5%A5%B3%E4%B8%AD%E9%9F%B3&page=1">女中音</a>
+					</li>
+					
+				</ul>
+			</div>
+			
+
+<!-- 			<div class="personal-down">
+				<a href="http://wm.10086.cn/view/wap/musicindex.do?cType=sst_client&nodeId=7638&cid=014002C&ucid=" target="_blank" class="down-icon-box">
+					<div>
+						<img src = "/picture/icon-music.png" alt="" class="down-icon">
+						<div class="down-qrcode">
+							<div class="qrcode" data-qr="http://wm.10086.cn/view/wap/musicindex.do?cType=sst_client&nodeId=7638&cid=014002C&ucid=" data-wm="http://www.migu.cn/assets/pc/images/personal/icon-music.png"></div>
+							<p class="text-center clr3 font14 lineH36">扫码下载唯爱音乐客户端</p>
+						</div>
+					</div>
+					<p class="down-text"><span class="icon">下载APP</span></p>
+				</a>
+			</div>
+ -->
+
+		</div>
+		<!-- 分类 end -->
+		
+		
+			
+								<!-- 短视频 start -->
+				<div class="personal-container">
+					<h2 class="personal-title">
+					<img src = "/picture/20171214094207424192.png" class="title-icon">
+					<span class="personal-title-icon">短视频</span>
+					<a href="http://www.migu.cn/user/miguSSO?redirectType=PC_MUSIC&redirectUrl=http%3a%2f%2fmusic.migu.cn%2fv2%2fvideo%2fmv%3f_from%3dmigu" class="personal-more">更多</a>
+					</h2>
+					<ul class="personal-row row-4 height-185 clearfix">
+						
+						
+						<li class="row-item">
+							<div class="item-image">
+								<a href="http://www.migu.cn/user/miguSSO?redirectType=PC_MUSIC&redirectUrl=http%3A%2F%2Fmusic.migu.cn%2Fv2%2Fvideo%2Fmv%2F1108723772%3FcopyrightId%3D600597Y9Y7Q%26_from%3Dmigu" class="play" data-type="song" title="播放" target="_blank">&nbsp;</a>
+								<a href="http://www.migu.cn/user/miguSSO?redirectType=PC_MUSIC&redirectUrl=http%3A%2F%2Fmusic.migu.cn%2Fv2%2Fvideo%2Fmv%2F1108723772%3FcopyrightId%3D600597Y9Y7Q%26_from%3Dmigu" class="mask" title="如初之光" target="_blank">&nbsp;</a>
+								<a href="http://www.migu.cn/user/miguSSO?redirectType=PC_MUSIC&redirectUrl=http%3A%2F%2Fmusic.migu.cn%2Fv2%2Fvideo%2Fmv%2F1108723772%3FcopyrightId%3D600597Y9Y7Q%26_from%3Dmigu" class="item-image" target="_blank" data-stats="如初之光|^|唯爱音乐-短视频|^|0">
+									<img data-original="http://www.migu.cn:8080/12001/upload/graphicLink/20180129135109511645.jpg" src = "/picture/music-other.jpg" class="displayB" />
+								</a>
+							</div>
+							<div class="item-txt">
+								<p class="item-name" title="如初之光"><a href="http://www.migu.cn/user/miguSSO?redirectType=PC_MUSIC&redirectUrl=http%3A%2F%2Fmusic.migu.cn%2Fv2%2Fvideo%2Fmv%2F1108723772%3FcopyrightId%3D600597Y9Y7Q%26_from%3Dmigu" class="clr3" target="_blank" data-stats="如初之光|^|唯爱音乐-短视频|^|0">如初之光</a></p>
+								<p class="item-desc" title="爱的最初时光">爱的最初时光</p>
+							</div>
+						</li>
+						
+						
+						
+						<li class="row-item">
+							<div class="item-image">
+								<a href="http://www.migu.cn/user/miguSSO?redirectType=PC_MUSIC&redirectUrl=http%3A%2F%2Fmusic.migu.cn%2Fv2%2Fvideo%2Fmv%2F1108707210%3FcopyrightId%3D633887Y2223%26_from%3Dmigu" class="play" data-type="song" title="播放" target="_blank">&nbsp;</a>
+								<a href="http://www.migu.cn/user/miguSSO?redirectType=PC_MUSIC&redirectUrl=http%3A%2F%2Fmusic.migu.cn%2Fv2%2Fvideo%2Fmv%2F1108707210%3FcopyrightId%3D633887Y2223%26_from%3Dmigu" class="mask" title="爱太轻狂" target="_blank">&nbsp;</a>
+								<a href="http://www.migu.cn/user/miguSSO?redirectType=PC_MUSIC&redirectUrl=http%3A%2F%2Fmusic.migu.cn%2Fv2%2Fvideo%2Fmv%2F1108707210%3FcopyrightId%3D633887Y2223%26_from%3Dmigu" class="item-image" target="_blank" data-stats="爱太轻狂|^|唯爱音乐-短视频|^|1">
+									<img data-original="http://www.migu.cn:8080/12001/upload/graphicLink/20180129134910496337.jpg" src = "/picture/music-other.jpg" class="displayB" />
+								</a>
+							</div>
+							<div class="item-txt">
+								<p class="item-name" title="爱太轻狂"><a href="http://www.migu.cn/user/miguSSO?redirectType=PC_MUSIC&redirectUrl=http%3A%2F%2Fmusic.migu.cn%2Fv2%2Fvideo%2Fmv%2F1108707210%3FcopyrightId%3D633887Y2223%26_from%3Dmigu" class="clr3" target="_blank" data-stats="爱太轻狂|^|唯爱音乐-短视频|^|1">爱太轻狂</a></p>
+								<p class="item-desc" title="曾咏欣 陈翔">曾咏欣 陈翔</p>
+							</div>
+						</li>
+						
+						
+						
+						<li class="row-item">
+							<div class="item-image">
+								<a href="http://www.migu.cn/user/miguSSO?redirectType=PC_MUSIC&redirectUrl=http%3A%2F%2Fmusic.migu.cn%2Fv2%2Fvideo%2Fmv%2F1108713660%3FcopyrightId%3D632734Y0121%26_from%3Dmigu" class="play" data-type="song" title="播放" target="_blank">&nbsp;</a>
+								<a href="http://www.migu.cn/user/miguSSO?redirectType=PC_MUSIC&redirectUrl=http%3A%2F%2Fmusic.migu.cn%2Fv2%2Fvideo%2Fmv%2F1108713660%3FcopyrightId%3D632734Y0121%26_from%3Dmigu" class="mask" title="Don t Touch" target="_blank">&nbsp;</a>
+								<a href="http://www.migu.cn/user/miguSSO?redirectType=PC_MUSIC&redirectUrl=http%3A%2F%2Fmusic.migu.cn%2Fv2%2Fvideo%2Fmv%2F1108713660%3FcopyrightId%3D632734Y0121%26_from%3Dmigu" class="item-image" target="_blank" data-stats="Don t Touch|^|唯爱音乐-短视频|^|2">
+									<img data-original="http://www.migu.cn:8080/12001/upload/graphicLink/20180122113650365185.jpg" src = "/picture/music-other.jpg" class="displayB" />
+								</a>
+							</div>
+							<div class="item-txt">
+								<p class="item-name" title="Don t Touch"><a href="http://www.migu.cn/user/miguSSO?redirectType=PC_MUSIC&redirectUrl=http%3A%2F%2Fmusic.migu.cn%2Fv2%2Fvideo%2Fmv%2F1108713660%3FcopyrightId%3D632734Y0121%26_from%3Dmigu" class="clr3" target="_blank" data-stats="Don t Touch|^|唯爱音乐-短视频|^|2">Don t Touch</a></p>
+								<p class="item-desc" title="SNH48">SNH48</p>
+							</div>
+						</li>
+						
+						
+						
+						<li class="row-item">
+							<div class="item-image">
+								<a href="http://www.migu.cn/user/miguSSO?redirectType=PC_MUSIC&redirectUrl=http%3A%2F%2Fmusic.migu.cn%2Fv2%2Fvideo%2Fmv%2F1108714223%3FcopyrightId%3D600575Y9BAB%26_from%3Dmigu" class="play" data-type="song" title="播放" target="_blank">&nbsp;</a>
+								<a href="http://www.migu.cn/user/miguSSO?redirectType=PC_MUSIC&redirectUrl=http%3A%2F%2Fmusic.migu.cn%2Fv2%2Fvideo%2Fmv%2F1108714223%3FcopyrightId%3D600575Y9BAB%26_from%3Dmigu" class="mask" title="萧敬腾" target="_blank">&nbsp;</a>
+								<a href="http://www.migu.cn/user/miguSSO?redirectType=PC_MUSIC&redirectUrl=http%3A%2F%2Fmusic.migu.cn%2Fv2%2Fvideo%2Fmv%2F1108714223%3FcopyrightId%3D600575Y9BAB%26_from%3Dmigu" class="item-image" target="_blank" data-stats="萧敬腾|^|唯爱音乐-短视频|^|3">
+									<img data-original="http://www.migu.cn:8080/12001/upload/graphicLink/20180122113414341562.jpg" src = "/picture/music-other.jpg" class="displayB" />
+								</a>
+							</div>
+							<div class="item-txt">
+								<p class="item-name" title="萧敬腾"><a href="http://www.migu.cn/user/miguSSO?redirectType=PC_MUSIC&redirectUrl=http%3A%2F%2Fmusic.migu.cn%2Fv2%2Fvideo%2Fmv%2F1108714223%3FcopyrightId%3D600575Y9BAB%26_from%3Dmigu" class="clr3" target="_blank" data-stats="萧敬腾|^|唯爱音乐-短视频|^|3">萧敬腾</a></p>
+								<p class="item-desc" title="娛樂眾生的皮囊">娛樂眾生的皮囊</p>
+							</div>
+						</li>
+						
+						
+						
+						<li class="row-item">
+							<div class="item-image">
+								<a href="http://www.migu.cn/user/miguSSO?redirectType=PC_MUSIC&redirectUrl=http%3A%2F%2Fmusic.migu.cn%2Fv2%2Fvideo%2Fmv%2F1108716366%3FcopyrightId%3D699067Y0004%26_from%3Dmigu" class="play" data-type="song" title="播放" target="_blank">&nbsp;</a>
+								<a href="http://www.migu.cn/user/miguSSO?redirectType=PC_MUSIC&redirectUrl=http%3A%2F%2Fmusic.migu.cn%2Fv2%2Fvideo%2Fmv%2F1108716366%3FcopyrightId%3D699067Y0004%26_from%3Dmigu" class="mask" title="赵雷" target="_blank">&nbsp;</a>
+								<a href="http://www.migu.cn/user/miguSSO?redirectType=PC_MUSIC&redirectUrl=http%3A%2F%2Fmusic.migu.cn%2Fv2%2Fvideo%2Fmv%2F1108716366%3FcopyrightId%3D699067Y0004%26_from%3Dmigu" class="item-image" target="_blank" data-stats="赵雷|^|唯爱音乐-短视频|^|4">
+									<img data-original="http://www.migu.cn:8080/12001/upload/graphicLink/20180122112931294013.jpg" src = "/picture/music-other.jpg" class="displayB" />
+								</a>
+							</div>
+							<div class="item-txt">
+								<p class="item-name" title="赵雷"><a href="http://www.migu.cn/user/miguSSO?redirectType=PC_MUSIC&redirectUrl=http%3A%2F%2Fmusic.migu.cn%2Fv2%2Fvideo%2Fmv%2F1108716366%3FcopyrightId%3D699067Y0004%26_from%3Dmigu" class="clr3" target="_blank" data-stats="赵雷|^|唯爱音乐-短视频|^|4">赵雷</a></p>
+								<p class="item-desc" title="19岁的岁月">19岁的岁月</p>
+							</div>
+						</li>
+						
+						
+						
+						<li class="row-item">
+							<div class="item-image">
+								<a href="http://www.migu.cn/user/miguSSO?redirectType=PC_MUSIC&redirectUrl=http%3A%2F%2Fmusic.migu.cn%2Fv2%2Fvideo%2Fmv%2F1108705110%3FcopyrightId%3D633887Y2222%26_from%3Dmigu" class="play" data-type="song" title="播放" target="_blank">&nbsp;</a>
+								<a href="http://www.migu.cn/user/miguSSO?redirectType=PC_MUSIC&redirectUrl=http%3A%2F%2Fmusic.migu.cn%2Fv2%2Fvideo%2Fmv%2F1108705110%3FcopyrightId%3D633887Y2222%26_from%3Dmigu" class="mask" title="下一个爱情" target="_blank">&nbsp;</a>
+								<a href="http://www.migu.cn/user/miguSSO?redirectType=PC_MUSIC&redirectUrl=http%3A%2F%2Fmusic.migu.cn%2Fv2%2Fvideo%2Fmv%2F1108705110%3FcopyrightId%3D633887Y2222%26_from%3Dmigu" class="item-image" target="_blank" data-stats="下一个爱情|^|唯爱音乐-短视频|^|5">
+									<img data-original="http://www.migu.cn:8080/12001/upload/graphicLink/20180117155615566576.jpg" src = "/picture/music-other.jpg" class="displayB" />
+								</a>
+							</div>
+							<div class="item-txt">
+								<p class="item-name" title="下一个爱情"><a href="http://www.migu.cn/user/miguSSO?redirectType=PC_MUSIC&redirectUrl=http%3A%2F%2Fmusic.migu.cn%2Fv2%2Fvideo%2Fmv%2F1108705110%3FcopyrightId%3D633887Y2222%26_from%3Dmigu" class="clr3" target="_blank" data-stats="下一个爱情|^|唯爱音乐-短视频|^|5">下一个爱情</a></p>
+								<p class="item-desc" title="电视剧《恋爱先生》插曲">电视剧《恋爱先生》插曲</p>
+							</div>
+						</li>
+						
+						
+						
+						<li class="row-item">
+							<div class="item-image">
+								<a href="http://www.migu.cn/user/miguSSO?redirectType=PC_MUSIC&redirectUrl=http%3A%2F%2Fmusic.migu.cn%2Fv2%2Fvideo%2Fmv%2F1108706020%3FcopyrightId%3D699087Y0021%26_from%3Dmigu" class="play" data-type="song" title="播放" target="_blank">&nbsp;</a>
+								<a href="http://www.migu.cn/user/miguSSO?redirectType=PC_MUSIC&redirectUrl=http%3A%2F%2Fmusic.migu.cn%2Fv2%2Fvideo%2Fmv%2F1108706020%3FcopyrightId%3D699087Y0021%26_from%3Dmigu" class="mask" title="三十岁的自己" target="_blank">&nbsp;</a>
+								<a href="http://www.migu.cn/user/miguSSO?redirectType=PC_MUSIC&redirectUrl=http%3A%2F%2Fmusic.migu.cn%2Fv2%2Fvideo%2Fmv%2F1108706020%3FcopyrightId%3D699087Y0021%26_from%3Dmigu" class="item-image" target="_blank" data-stats="三十岁的自己|^|唯爱音乐-短视频|^|6">
+									<img data-original="http://www.migu.cn:8080/12001/upload/graphicLink/20180117155318531591.jpg" src = "/picture/music-other.jpg" class="displayB" />
+								</a>
+							</div>
+							<div class="item-txt">
+								<p class="item-name" title="三十岁的自己"><a href="http://www.migu.cn/user/miguSSO?redirectType=PC_MUSIC&redirectUrl=http%3A%2F%2Fmusic.migu.cn%2Fv2%2Fvideo%2Fmv%2F1108706020%3FcopyrightId%3D699087Y0021%26_from%3Dmigu" class="clr3" target="_blank" data-stats="三十岁的自己|^|唯爱音乐-短视频|^|6">三十岁的自己</a></p>
+								<p class="item-desc" title="三十而立，解读自我">三十而立，解读自我</p>
+							</div>
+						</li>
+						
+						
+						
+						<li class="row-item">
+							<div class="item-image">
+								<a href="http://www.migu.cn/user/miguSSO?redirectType=PC_MUSIC&redirectUrl=http%3A%2F%2Fmusic.migu.cn%2Fv2%2Fvideo%2Fmv%2F1104808026%3FcopyrightId%3D600570Y9G76D%26_from%3Dmigu" class="play" data-type="song" title="播放" target="_blank">&nbsp;</a>
+								<a href="http://www.migu.cn/user/miguSSO?redirectType=PC_MUSIC&redirectUrl=http%3A%2F%2Fmusic.migu.cn%2Fv2%2Fvideo%2Fmv%2F1104808026%3FcopyrightId%3D600570Y9G76D%26_from%3Dmigu" class="mask" title="Who You Are" target="_blank">&nbsp;</a>
+								<a href="http://www.migu.cn/user/miguSSO?redirectType=PC_MUSIC&redirectUrl=http%3A%2F%2Fmusic.migu.cn%2Fv2%2Fvideo%2Fmv%2F1104808026%3FcopyrightId%3D600570Y9G76D%26_from%3Dmigu" class="item-image" target="_blank" data-stats="Who You Are|^|唯爱音乐-短视频|^|7">
+									<img data-original="http://www.migu.cn:8080/12001/upload/graphicLink/20180115173620365365.jpg" src = "/picture/music-other.jpg" class="displayB" />
+								</a>
+							</div>
+							<div class="item-txt">
+								<p class="item-name" title="Who You Are"><a href="http://www.migu.cn/user/miguSSO?redirectType=PC_MUSIC&redirectUrl=http%3A%2F%2Fmusic.migu.cn%2Fv2%2Fvideo%2Fmv%2F1104808026%3FcopyrightId%3D600570Y9G76D%26_from%3Dmigu" class="clr3" target="_blank" data-stats="Who You Are|^|唯爱音乐-短视频|^|7">Who You Are</a></p>
+								<p class="item-desc" title="Jessie J灵魂敲击曲">Jessie J灵魂敲击曲</p>
+							</div>
+						</li>
+										
+					</ul>
+				</div>
+				<!-- 短视频 end -->
+			
+		
+			
+			
+			
+			
+		
+			
+		
+		
+		<!-- 音乐排行榜 start -->
+		
+		<div class="personal-container rank-container" id="js_rank_container">
+			<h2 class="personal-title"><img src = "/picture/rank-music-title-icon.png" class="title-icon">音乐排行榜
+			<a href="http://www.migu.cn/user/miguSSO?redirectType=PC_MUSIC&redirectUrl=http%3a%2f%2fmusic.migu.cn%2fv2%2fmusic%2fbillboard%2f%3f_from%3dmigu" class="personal-more" target="_blank">更多</a></h2>
+			<div class="clearfix">
+				
+				<div class="rank-wrapper">
+					<h3 class="rank-title">唯爱24H热销音乐榜</h3>
+					<ul class="rank-list">
+						
+						
+						<li class="js_rank_item rank-item on item-1 " >
+							<div>
+								<img src = "/picture/313173249bb14fd29b2f40cabc43a282.jpg" class="face" />
+								<i class="num">1</i>
+								<div class="face">
+									<a href="javascript:;" class="play js_to_music_play_btn" data-type="song" data-resid="69906300114" title="播放">&nbsp;</a>
+									<a href="http://www.migu.cn/music/detail/20000000069906300114.html" class="mask" title="心率" target="_blank">&nbsp;</a>
+								</div>
+								<a href="http://www.migu.cn/music/detail/20000000069906300114.html"  target="_blank"  data-stats="心率|^|唯爱音乐-音乐排行榜-唯爱24H热销音乐榜|^|0">
+									<h2 class="name" title="心率">心率</h2>
+									<p class="auth" title="鹿晗">鹿晗</p>
+								</a>
+							</div>
+						</li>
+						
+						
+						
+						<li class="js_rank_item rank-item  item-2 even" >
+							<div>
+								<img src = "/picture/6c67ab80d7a344f2a7e8295fbc82741a.jpg" class="face" />
+								<i class="num">2</i>
+								<div class="face">
+									<a href="javascript:;" class="play js_to_music_play_btn" data-type="song" data-resid="63261202501" title="播放">&nbsp;</a>
+									<a href="http://www.migu.cn/music/detail/20000000063261202501.html" class="mask" title="远走高飞(合唱版)" target="_blank">&nbsp;</a>
+								</div>
+								<a href="http://www.migu.cn/music/detail/20000000063261202501.html"  target="_blank"  data-stats="远走高飞(合唱版)|^|唯爱音乐-音乐排行榜-唯爱24H热销音乐榜|^|1">
+									<h2 class="name" title="远走高飞(合唱版)">远走高飞(合唱版)</h2>
+									<p class="auth" title="金志文|徐佳莹">金志文|徐佳莹</p>
+								</a>
+							</div>
+						</li>
+						
+						
+						
+						<li class="js_rank_item rank-item  item-3 " >
+							<div>
+								<img src = "/picture/1702042227318545.jpg" class="face" />
+								<i class="num">3</i>
+								<div class="face">
+									<a href="javascript:;" class="play js_to_music_play_btn" data-type="song" data-resid="6990539Z06X" title="播放">&nbsp;</a>
+									<a href="http://www.migu.cn/music/detail/2000000006990539Z06X.html" class="mask" title="成都(歌手)" target="_blank">&nbsp;</a>
+								</div>
+								<a href="http://www.migu.cn/music/detail/2000000006990539Z06X.html"  target="_blank"  data-stats="成都(歌手)|^|唯爱音乐-音乐排行榜-唯爱24H热销音乐榜|^|2">
+									<h2 class="name" title="成都(歌手)">成都(歌手)</h2>
+									<p class="auth" title="赵雷">赵雷</p>
+								</a>
+							</div>
+						</li>
+						
+						
+						
+						<li class="js_rank_item rank-item  item-4 even" >
+							<div>
+								<img src = "/picture/f20177c2a45d49ebb173c6d86e4267b8.jpg" class="face" />
+								<i class="num">4</i>
+								<div class="face">
+									<a href="javascript:;" class="play js_to_music_play_btn" data-type="song" data-resid="60084651138" title="播放">&nbsp;</a>
+									<a href="http://www.migu.cn/music/detail/20000000060084651138.html" class="mask" title="暧昧" target="_blank">&nbsp;</a>
+								</div>
+								<a href="http://www.migu.cn/music/detail/20000000060084651138.html"  target="_blank"  data-stats="暧昧|^|唯爱音乐-音乐排行榜-唯爱24H热销音乐榜|^|3">
+									<h2 class="name" title="暧昧">暧昧</h2>
+									<p class="auth" title="薛之谦">薛之谦</p>
+								</a>
+							</div>
+						</li>
+						
+						
+						
+						<li class="js_rank_item rank-item  item-5 " >
+							<div>
+								<img src = "/picture/7c439f8316bf4a8792f40b48b77c47de.jpg" class="face" />
+								<i class="num">5</i>
+								<div class="face">
+									<a href="javascript:;" class="play js_to_music_play_btn" data-type="song" data-resid="6990539Z0K8" title="播放">&nbsp;</a>
+									<a href="http://www.migu.cn/music/detail/2000000006990539Z0K8.html" class="mask" title="大鱼(中国新歌声)" target="_blank">&nbsp;</a>
+								</div>
+								<a href="http://www.migu.cn/music/detail/2000000006990539Z0K8.html"  target="_blank"  data-stats="大鱼(中国新歌声)|^|唯爱音乐-音乐排行榜-唯爱24H热销音乐榜|^|4">
+									<h2 class="name" title="大鱼(中国新歌声)">大鱼(中国新歌声)</h2>
+									<p class="auth" title="郭沁|周深">郭沁|周深</p>
+								</a>
+							</div>
+						</li>
+						
+						
+						
+						<li class="js_rank_item rank-item  item-6 even" >
+							<div>
+								<img src = "/picture/44ccc76d446e44f7a124a5b8968f1895.jpg" class="face" />
+								<i class="num">6</i>
+								<div class="face">
+									<a href="javascript:;" class="play js_to_music_play_btn" data-type="song" data-resid="6005751B3P6" title="播放">&nbsp;</a>
+									<a href="http://www.migu.cn/music/detail/2000000006005751B3P6.html" class="mask" title="我看着你的时候" target="_blank">&nbsp;</a>
+								</div>
+								<a href="http://www.migu.cn/music/detail/2000000006005751B3P6.html"  target="_blank"  data-stats="我看着你的时候|^|唯爱音乐-音乐排行榜-唯爱24H热销音乐榜|^|5">
+									<h2 class="name" title="我看着你的时候">我看着你的时候</h2>
+									<p class="auth" title="李荣浩">李荣浩</p>
+								</a>
+							</div>
+						</li>
+						
+						
+						
+						<li class="js_rank_item rank-item  item-7 " >
+							<div>
+								<img src = "/picture/4a81961d3f134be5b6c5f40b35a5da30.jpg" class="face" />
+								<i class="num">7</i>
+								<div class="face">
+									<a href="javascript:;" class="play js_to_music_play_btn" data-type="song" data-resid="63879702093" title="播放">&nbsp;</a>
+									<a href="http://www.migu.cn/music/detail/20000000063879702093.html" class="mask" title="回忆总想哭" target="_blank">&nbsp;</a>
+								</div>
+								<a href="http://www.migu.cn/music/detail/20000000063879702093.html"  target="_blank"  data-stats="回忆总想哭|^|唯爱音乐-音乐排行榜-唯爱24H热销音乐榜|^|6">
+									<h2 class="name" title="回忆总想哭">回忆总想哭</h2>
+									<p class="auth" title="姜玉阳|南宫嘉骏">姜玉阳|南宫嘉骏</p>
+								</a>
+							</div>
+						</li>
+						
+						
+						
+						<li class="js_rank_item rank-item  item-8 even" >
+							<div>
+								<img src = "/picture/214c32674f944e9a9529e86002abc053.jpg" class="face" />
+								<i class="num">8</i>
+								<div class="face">
+									<a href="javascript:;" class="play js_to_music_play_btn" data-type="song" data-resid="6005970S3P9" title="播放">&nbsp;</a>
+									<a href="http://www.migu.cn/music/detail/2000000006005970S3P9.html" class="mask" title="I Do" target="_blank">&nbsp;</a>
+								</div>
+								<a href="http://www.migu.cn/music/detail/2000000006005970S3P9.html"  target="_blank"  data-stats="I Do|^|唯爱音乐-音乐排行榜-唯爱24H热销音乐榜|^|7">
+									<h2 class="name" title="I Do">I Do</h2>
+									<p class="auth" title="莫文蔚">莫文蔚</p>
+								</a>
+							</div>
+						</li>
+						
+						
+						
+						<li class="js_rank_item rank-item  item-9 " >
+							<div>
+								<img src = "/picture/812d0f3a7ed6417db1877a89a8e6b21d.jpg" class="face" />
+								<i class="num">9</i>
+								<div class="face">
+									<a href="javascript:;" class="play js_to_music_play_btn" data-type="song" data-resid="6007629Z004" title="播放">&nbsp;</a>
+									<a href="http://www.migu.cn/music/detail/2000000006007629Z004.html" class="mask" title="越过山丘——致 李宗盛" target="_blank">&nbsp;</a>
+								</div>
+								<a href="http://www.migu.cn/music/detail/2000000006007629Z004.html"  target="_blank"  data-stats="越过山丘——致 李宗盛|^|唯爱音乐-音乐排行榜-唯爱24H热销音乐榜|^|8">
+									<h2 class="name" title="越过山丘——致 李宗盛">越过山丘——致 李宗盛</h2>
+									<p class="auth" title="杨宗纬">杨宗纬</p>
+								</a>
+							</div>
+						</li>
+						
+						
+						
+						<li class="js_rank_item rank-item  item-10 even" >
+							<div>
+								<img src = "/picture/6c67ab80d7a344f2a7e8295fbc82741a.jpg" class="face" />
+								<i class="num">10</i>
+								<div class="face">
+									<a href="javascript:;" class="play js_to_music_play_btn" data-type="song" data-resid="63261202497" title="播放">&nbsp;</a>
+									<a href="http://www.migu.cn/music/detail/20000000063261202497.html" class="mask" title="远走高飞" target="_blank">&nbsp;</a>
+								</div>
+								<a href="http://www.migu.cn/music/detail/20000000063261202497.html"  target="_blank"  data-stats="远走高飞|^|唯爱音乐-音乐排行榜-唯爱24H热销音乐榜|^|9">
+									<h2 class="name" title="远走高飞">远走高飞</h2>
+									<p class="auth" title="金志文">金志文</p>
+								</a>
+							</div>
+						</li>
+						
+						
+						
+						
+						
+						
+					</ul>
+				</div>
+				
+				<div class="rank-wrapper">
+					<h3 class="rank-title">唯爱音乐榜</h3>
+					<ul class="rank-list">
+						
+						
+						<li class="js_rank_item rank-item on item-1 " >
+							<div>
+								<img src = "/picture/313173249bb14fd29b2f40cabc43a282.jpg" class="face" />
+								<i class="num">1</i>
+								<div class="face">
+									<a href="javascript:;" class="play js_to_music_play_btn" data-type="song" data-resid="69906300114" title="播放">&nbsp;</a>
+									<a href="http://www.migu.cn/music/detail/20000000069906300114.html" class="mask" title="心率" target="_blank">&nbsp;</a>
+								</div>
+								<a href="http://www.migu.cn/music/detail/20000000069906300114.html"  target="_blank"  data-stats="心率|^|唯爱音乐-音乐排行榜-唯爱音乐榜|^|0">
+									<h2 class="name" title="心率">心率</h2>
+									<p class="auth" title="鹿晗">鹿晗</p>
+								</a>
+							</div>
+						</li>
+						
+						
+						
+						<li class="js_rank_item rank-item  item-2 even" >
+							<div>
+								<img src = "/picture/44ccc76d446e44f7a124a5b8968f1895.jpg" class="face" />
+								<i class="num">2</i>
+								<div class="face">
+									<a href="javascript:;" class="play js_to_music_play_btn" data-type="song" data-resid="6005751B3P6" title="播放">&nbsp;</a>
+									<a href="http://www.migu.cn/music/detail/2000000006005751B3P6.html" class="mask" title="我看着你的时候" target="_blank">&nbsp;</a>
+								</div>
+								<a href="http://www.migu.cn/music/detail/2000000006005751B3P6.html"  target="_blank"  data-stats="我看着你的时候|^|唯爱音乐-音乐排行榜-唯爱音乐榜|^|1">
+									<h2 class="name" title="我看着你的时候">我看着你的时候</h2>
+									<p class="auth" title="李荣浩">李荣浩</p>
+								</a>
+							</div>
+						</li>
+						
+						
+						
+						<li class="js_rank_item rank-item  item-3 " >
+							<div>
+								<img src = "/picture/7c439f8316bf4a8792f40b48b77c47de.jpg" class="face" />
+								<i class="num">3</i>
+								<div class="face">
+									<a href="javascript:;" class="play js_to_music_play_btn" data-type="song" data-resid="6990539Z0K8" title="播放">&nbsp;</a>
+									<a href="http://www.migu.cn/music/detail/2000000006990539Z0K8.html" class="mask" title="大鱼(中国新歌声)" target="_blank">&nbsp;</a>
+								</div>
+								<a href="http://www.migu.cn/music/detail/2000000006990539Z0K8.html"  target="_blank"  data-stats="大鱼(中国新歌声)|^|唯爱音乐-音乐排行榜-唯爱音乐榜|^|2">
+									<h2 class="name" title="大鱼(中国新歌声)">大鱼(中国新歌声)</h2>
+									<p class="auth" title="郭沁|周深">郭沁|周深</p>
+								</a>
+							</div>
+						</li>
+						
+						
+						
+						<li class="js_rank_item rank-item  item-4 even" >
+							<div>
+								<img src = "/picture/214c32674f944e9a9529e86002abc053.jpg" class="face" />
+								<i class="num">4</i>
+								<div class="face">
+									<a href="javascript:;" class="play js_to_music_play_btn" data-type="song" data-resid="6005970S3P9" title="播放">&nbsp;</a>
+									<a href="http://www.migu.cn/music/detail/2000000006005970S3P9.html" class="mask" title="I Do" target="_blank">&nbsp;</a>
+								</div>
+								<a href="http://www.migu.cn/music/detail/2000000006005970S3P9.html"  target="_blank"  data-stats="I Do|^|唯爱音乐-音乐排行榜-唯爱音乐榜|^|3">
+									<h2 class="name" title="I Do">I Do</h2>
+									<p class="auth" title="莫文蔚">莫文蔚</p>
+								</a>
+							</div>
+						</li>
+						
+						
+						
+						<li class="js_rank_item rank-item  item-5 " >
+							<div>
+								<img src = "/picture/812d0f3a7ed6417db1877a89a8e6b21d.jpg" class="face" />
+								<i class="num">5</i>
+								<div class="face">
+									<a href="javascript:;" class="play js_to_music_play_btn" data-type="song" data-resid="6007629Z004" title="播放">&nbsp;</a>
+									<a href="http://www.migu.cn/music/detail/2000000006007629Z004.html" class="mask" title="越过山丘——致 李宗盛" target="_blank">&nbsp;</a>
+								</div>
+								<a href="http://www.migu.cn/music/detail/2000000006007629Z004.html"  target="_blank"  data-stats="越过山丘——致 李宗盛|^|唯爱音乐-音乐排行榜-唯爱音乐榜|^|4">
+									<h2 class="name" title="越过山丘——致 李宗盛">越过山丘——致 李宗盛</h2>
+									<p class="auth" title="杨宗纬">杨宗纬</p>
+								</a>
+							</div>
+						</li>
+						
+						
+						
+						<li class="js_rank_item rank-item  item-6 even" >
+							<div>
+								<img src = "/picture/be4393462b01469183dce305e9a6e454.jpg" class="face" />
+								<i class="num">6</i>
+								<div class="face">
+									<a href="javascript:;" class="play js_to_music_play_btn" data-type="song" data-resid="63880300430" title="播放">&nbsp;</a>
+									<a href="http://www.migu.cn/music/detail/20000000063880300430.html" class="mask" title="再遇不到你这样的人" target="_blank">&nbsp;</a>
+								</div>
+								<a href="http://www.migu.cn/music/detail/20000000063880300430.html"  target="_blank"  data-stats="再遇不到你这样的人|^|唯爱音乐-音乐排行榜-唯爱音乐榜|^|5">
+									<h2 class="name" title="再遇不到你这样的人">再遇不到你这样的人</h2>
+									<p class="auth" title="庄心妍">庄心妍</p>
+								</a>
+							</div>
+						</li>
+						
+						
+						
+						<li class="js_rank_item rank-item  item-7 " >
+							<div>
+								<img src = "/picture/c43222d67b224c1f97f321a8d78f1c0c.jpg" class="face" />
+								<i class="num">7</i>
+								<div class="face">
+									<a href="javascript:;" class="play js_to_music_play_btn" data-type="song" data-resid="6990539Z0L1" title="播放">&nbsp;</a>
+									<a href="http://www.migu.cn/music/detail/2000000006990539Z0L1.html" class="mask" title="追光者(蒙面唱将猜猜猜)" target="_blank">&nbsp;</a>
+								</div>
+								<a href="http://www.migu.cn/music/detail/2000000006990539Z0L1.html"  target="_blank"  data-stats="追光者(蒙面唱将猜猜猜)|^|唯爱音乐-音乐排行榜-唯爱音乐榜|^|6">
+									<h2 class="name" title="追光者(蒙面唱将猜猜猜)">追光者(蒙面唱将猜猜猜)</h2>
+									<p class="auth" title="汪苏泷">汪苏泷</p>
+								</a>
+							</div>
+						</li>
+						
+						
+						
+						<li class="js_rank_item rank-item  item-8 even" >
+							<div>
+								<img src = "/picture/f44dd993d5c94bd5a54b5f080f66fbca.jpg" class="face" />
+								<i class="num">8</i>
+								<div class="face">
+									<a href="javascript:;" class="play js_to_music_play_btn" data-type="song" data-resid="6005970S6G0" title="播放">&nbsp;</a>
+									<a href="http://www.migu.cn/music/detail/2000000006005970S6G0.html" class="mask" title="The Spectre" target="_blank">&nbsp;</a>
+								</div>
+								<a href="http://www.migu.cn/music/detail/2000000006005970S6G0.html"  target="_blank"  data-stats="The Spectre|^|唯爱音乐-音乐排行榜-唯爱音乐榜|^|7">
+									<h2 class="name" title="The Spectre">The Spectre</h2>
+									<p class="auth" title="Alan Walker">Alan Walker</p>
+								</a>
+							</div>
+						</li>
+						
+						
+						
+						<li class="js_rank_item rank-item  item-9 " >
+							<div>
+								<img src = "/picture/b2cdaaa7a8a54413b660ac5a20dbb5a7.jpg" class="face" />
+								<i class="num">9</i>
+								<div class="face">
+									<a href="javascript:;" class="play js_to_music_play_btn" data-type="song" data-resid="6006550AX3L" title="播放">&nbsp;</a>
+									<a href="http://www.migu.cn/music/detail/2000000006006550AX3L.html" class="mask" title="Papillon(巴比龙)" target="_blank">&nbsp;</a>
+								</div>
+								<a href="http://www.migu.cn/music/detail/2000000006006550AX3L.html"  target="_blank"  data-stats="Papillon(巴比龙)|^|唯爱音乐-音乐排行榜-唯爱音乐榜|^|8">
+									<h2 class="name" title="Papillon(巴比龙)">Papillon(巴比龙)</h2>
+									<p class="auth" title="王嘉尔 ">王嘉尔 </p>
+								</a>
+							</div>
+						</li>
+						
+						
+						
+						<li class="js_rank_item rank-item  item-10 even" >
+							<div>
+								<img src = "/picture/44ccc76d446e44f7a124a5b8968f1895.jpg" class="face" />
+								<i class="num">10</i>
+								<div class="face">
+									<a href="javascript:;" class="play js_to_music_play_btn" data-type="song" data-resid="6005751B097" title="播放">&nbsp;</a>
+									<a href="http://www.migu.cn/music/detail/2000000006005751B097.html" class="mask" title="歌谣" target="_blank">&nbsp;</a>
+								</div>
+								<a href="http://www.migu.cn/music/detail/2000000006005751B097.html"  target="_blank"  data-stats="歌谣|^|唯爱音乐-音乐排行榜-唯爱音乐榜|^|9">
+									<h2 class="name" title="歌谣">歌谣</h2>
+									<p class="auth" title="李荣浩">李荣浩</p>
+								</a>
+							</div>
+						</li>
+						
+						
+						
+						
+						
+						
+						
+						
+					</ul>
+				</div>
+				
+				<div class="rank-wrapper">
+					<h3 class="rank-title">音乐top10</h3>
+					<ul class="rank-list">
+						
+						
+						<li class="js_rank_item rank-item on item-1 " >
+							<div>
+								<img src = "/picture/eec44ef52e1a4fb58b48089159607237.jpg" class="face" />
+								<i class="num">1</i>
+								<div class="face">
+									<a href="javascript:;" class="play js_to_music_play_btn" data-type="song" data-resid="69905300543" title="播放">&nbsp;</a>
+									<a href="http://www.migu.cn/music/detail/20000000069905300543.html" class="mask" title="浪子心声(电影《追龙》宣传推广曲)" target="_blank">&nbsp;</a>
+								</div>
+								<a href="http://www.migu.cn/music/detail/20000000069905300543.html"  target="_blank"  data-stats="浪子心声(电影《追龙》宣传推广曲)|^|唯爱音乐-音乐排行榜-音乐top10|^|0">
+									<h2 class="name" title="浪子心声(电影《追龙》宣传推广曲)">浪子心声(电影《追龙》宣传推广曲)</h2>
+									<p class="auth" title="刘德华">刘德华</p>
+								</a>
+							</div>
+						</li>
+						
+						
+						
+						<li class="js_rank_item rank-item  item-2 even" >
+							<div>
+								<img src = "/picture/856d8e112f1f41f191b9287f248c89dd.jpg" class="face" />
+								<i class="num">2</i>
+								<div class="face">
+									<a href="javascript:;" class="play js_to_music_play_btn" data-type="song" data-resid="69543203170" title="播放">&nbsp;</a>
+									<a href="http://www.migu.cn/music/detail/20000000069543203170.html" class="mask" title="像我这样的人(天天向上2017)" target="_blank">&nbsp;</a>
+								</div>
+								<a href="http://www.migu.cn/music/detail/20000000069543203170.html"  target="_blank"  data-stats="像我这样的人(天天向上2017)|^|唯爱音乐-音乐排行榜-音乐top10|^|1">
+									<h2 class="name" title="像我这样的人(天天向上2017)">像我这样的人(天天向上2017)</h2>
+									<p class="auth" title="毛不易">毛不易</p>
+								</a>
+							</div>
+						</li>
+						
+						
+						
+						<li class="js_rank_item rank-item  item-3 " >
+							<div>
+								<img src = "/picture/e098c342989442e699a65ede35f3fda7.jpg" class="face" />
+								<i class="num">3</i>
+								<div class="face">
+									<a href="javascript:;" class="play js_to_music_play_btn" data-type="song" data-resid="6005860BR6F" title="播放">&nbsp;</a>
+									<a href="http://www.migu.cn/music/detail/2000000006005860BR6F.html" class="mask" title="大鱼 (唱片版)" target="_blank">&nbsp;</a>
+								</div>
+								<a href="http://www.migu.cn/music/detail/2000000006005860BR6F.html"  target="_blank"  data-stats="大鱼 (唱片版)|^|唯爱音乐-音乐排行榜-音乐top10|^|2">
+									<h2 class="name" title="大鱼 (唱片版)">大鱼 (唱片版)</h2>
+									<p class="auth" title="周深">周深</p>
+								</a>
+							</div>
+						</li>
+						
+						
+						
+						<li class="js_rank_item rank-item  item-4 even" >
+							<div>
+								<img src = "/picture/ae0a0e57e70f48fa8026398112e94ed6.jpg" class="face" />
+								<i class="num">4</i>
+								<div class="face">
+									<a href="javascript:;" class="play js_to_music_play_btn" data-type="song" data-resid="6006550DHAP" title="播放">&nbsp;</a>
+									<a href="http://www.migu.cn/music/detail/2000000006006550DHAP.html" class="mask" title="OKAY" target="_blank">&nbsp;</a>
+								</div>
+								<a href="http://www.migu.cn/music/detail/2000000006006550DHAP.html"  target="_blank"  data-stats="OKAY|^|唯爱音乐-音乐排行榜-音乐top10|^|3">
+									<h2 class="name" title="OKAY">OKAY</h2>
+									<p class="auth" title="王嘉尔 ">王嘉尔 </p>
+								</a>
+							</div>
+						</li>
+						
+						
+						
+						<li class="js_rank_item rank-item  item-5 " >
+							<div>
+								<img src = "/picture/b73c96f93b0149a992698276fd7c9459.jpg" class="face" />
+								<i class="num">5</i>
+								<div class="face">
+									<a href="javascript:;" class="play js_to_music_play_btn" data-type="song" data-resid="69909900006" title="播放">&nbsp;</a>
+									<a href="http://www.migu.cn/music/detail/20000000069909900006.html" class="mask" title="你说" target="_blank">&nbsp;</a>
+								</div>
+								<a href="http://www.migu.cn/music/detail/20000000069909900006.html"  target="_blank"  data-stats="你说|^|唯爱音乐-音乐排行榜-音乐top10|^|4">
+									<h2 class="name" title="你说">你说</h2>
+									<p class="auth" title="易烊千玺">易烊千玺</p>
+								</a>
+							</div>
+						</li>
+						
+						
+						
+						<li class="js_rank_item rank-item  item-6 even" >
+							<div>
+								<img src = "/picture/b1c1c5b081d741878e4e642977b25c5c.jpg" class="face" />
+								<i class="num">6</i>
+								<div class="face">
+									<a href="javascript:;" class="play js_to_music_play_btn" data-type="song" data-resid="69906200024" title="播放">&nbsp;</a>
+									<a href="http://www.migu.cn/music/detail/20000000069906200024.html" class="mask" title="Unpredictable" target="_blank">&nbsp;</a>
+								</div>
+								<a href="http://www.migu.cn/music/detail/20000000069906200024.html"  target="_blank"  data-stats="Unpredictable|^|唯爱音乐-音乐排行榜-音乐top10|^|5">
+									<h2 class="name" title="Unpredictable">Unpredictable</h2>
+									<p class="auth" title="易烊千玺">易烊千玺</p>
+								</a>
+							</div>
+						</li>
+						
+						
+						
+						<li class="js_rank_item rank-item  item-7 " >
+							<div>
+								<img src = "/picture/b4f2df22ca4848d88f4ffb60992a70c9.jpg" class="face" />
+								<i class="num">7</i>
+								<div class="face">
+									<a href="javascript:;" class="play js_to_music_play_btn" data-type="song" data-resid="6005970SF8L" title="播放">&nbsp;</a>
+									<a href="http://www.migu.cn/music/detail/2000000006005970SF8L.html" class="mask" title="Lemon" target="_blank">&nbsp;</a>
+								</div>
+								<a href="http://www.migu.cn/music/detail/2000000006005970SF8L.html"  target="_blank"  data-stats="Lemon|^|唯爱音乐-音乐排行榜-音乐top10|^|6">
+									<h2 class="name" title="Lemon">Lemon</h2>
+									<p class="auth" title="N.E.R.D.|Rihanna">N.E.R.D.|Rihanna</p>
+								</a>
+							</div>
+						</li>
+						
+						
+						
+						<li class="js_rank_item rank-item  item-8 even" >
+							<div>
+								<img src = "/picture/588a9ad04bae457984b21f04b446190c.jpg" class="face" />
+								<i class="num">8</i>
+								<div class="face">
+									<a href="javascript:;" class="play js_to_music_play_btn" data-type="song" data-resid="69906200015" title="播放">&nbsp;</a>
+									<a href="http://www.migu.cn/music/detail/20000000069906200015.html" class="mask" title="萤火" target="_blank">&nbsp;</a>
+								</div>
+								<a href="http://www.migu.cn/music/detail/20000000069906200015.html"  target="_blank"  data-stats="萤火|^|唯爱音乐-音乐排行榜-音乐top10|^|7">
+									<h2 class="name" title="萤火">萤火</h2>
+									<p class="auth" title="TFBOYS">TFBOYS</p>
+								</a>
+							</div>
+						</li>
+						
+						
+						
+						<li class="js_rank_item rank-item  item-9 " >
+							<div>
+								<img src = "/picture/9608bc9295d24eda92d8abf020959568.jpg" class="face" />
+								<i class="num">9</i>
+								<div class="face">
+									<a href="javascript:;" class="play js_to_music_play_btn" data-type="song" data-resid="6006550DHAA" title="播放">&nbsp;</a>
+									<a href="http://www.migu.cn/music/detail/2000000006006550DHAA.html" class="mask" title="传世之爱(电视剧《独步天下》片尾曲)" target="_blank">&nbsp;</a>
+								</div>
+								<a href="http://www.migu.cn/music/detail/2000000006006550DHAA.html"  target="_blank"  data-stats="传世之爱(电视剧《独步天下》片尾曲)|^|唯爱音乐-音乐排行榜-音乐top10|^|8">
+									<h2 class="name" title="传世之爱(电视剧《独步天下》片尾曲)">传世之爱(电视剧《独步天下》片尾曲)</h2>
+									<p class="auth" title="张韶涵">张韶涵</p>
+								</a>
+							</div>
+						</li>
+						
+						
+						
+						<li class="js_rank_item rank-item  item-10 even" >
+							<div>
+								<img src = "/picture/4634efa50f0242b6a86b49c6ab4b07ab.jpg" class="face" />
+								<i class="num">10</i>
+								<div class="face">
+									<a href="javascript:;" class="play js_to_music_play_btn" data-type="song" data-resid="6005751BZHF" title="播放">&nbsp;</a>
+									<a href="http://www.migu.cn/music/detail/2000000006005751BZHF.html" class="mask" title="说散就散(电影《前任3：再见前任》主题曲)" target="_blank">&nbsp;</a>
+								</div>
+								<a href="http://www.migu.cn/music/detail/2000000006005751BZHF.html"  target="_blank"  data-stats="说散就散(电影《前任3：再见前任》主题曲)|^|唯爱音乐-音乐排行榜-音乐top10|^|9">
+									<h2 class="name" title="说散就散(电影《前任3：再见前任》主题曲)">说散就散(电影《前任3：再见前任》主题曲)</h2>
+									<p class="auth" title="袁娅维">袁娅维</p>
+								</a>
+							</div>
+						</li>
+						
+						
+						
+						
+						
+						
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+		
+		<!-- 音乐排行榜 end -->
+
+	</div>
+
+	{include file="index/bottom" /}
+
+<!-- <div id="footer">
+<div class="footerNew">
+    <ul class="footerLinks">
+        <li class="section-1">
+            <p>旗下公司</p>
+            <p><a href="http://www.migu.cn/user/miguSSO?redirectType=PC_MUSIC&redirectUrl=http%3a%2f%2fmusic.migu.cn%2fv2%2f%3f_from%3dmigu" target="_blank">唯爱音乐</a></p>
+            <p><a href="http://www.miguvideo.com" target="_blank">唯爱视讯</a></p>
+            <p><a href="http://www.cmread.com/u/index" target="_blank">唯爱数媒</a></p>
+            <p><a href="http://g.10086.cn/" target="_blank">唯爱互娱</a></p>
+            <p><a href="http://www.migudm.cn/" target="_blank">唯爱动漫</a></p>
+        </li>
+        <li class="section-2">
+            <p>服务支持</p>
+            <p><a href="http://a.migu.cn/" target="_blank">开放合作</a></p>
+            <p><a href="http://www.migu.cn/about/copyright.html" target="_blank">版权保护</a></p>
+            <p class="qrcode">
+                <a href="javascript:void(0);">手机访问</a>
+                <span id="J_FooterQR"></span>
+            </p>
+        </li>
+        <li class="section-3">
+            <p>关于唯爱</p>
+            <p><a href="http://www.migu.cn/about/intro.html" target="_blank">公司介绍</a></p>
+            <p><a href="http://www.migu.cn/about/news.html" target="_blank">新闻动态</a></p>
+            <p><a href="http://www.migu.cn/about/join.html" target="_blank">加入我们</a></p>
+            <p><a href="http://www.migu.cn/about/contact.html" target="_blank">联系我们</a></p>
+        </li>
+        <li class="section-4">
+            <p>推荐链接</p>
+            <p><a href="http://www.10086.cn/" target="_blank">中国移动</a></p>
+        </li>
+        <li class="section-5">
+            <p>关注唯爱</p>
+            <p class="qrcode wx">
+                <a href="javascript:void(0);">官方微信</a>
+                <img src = "/picture/icon_wx_3.png" alt="官方微信">
+            </p>
+            <p class="qrcode wb">
+                <a href="http://weibo.com/u/5428441557" target="_blank">官方微博</a>
+                <img src = "/picture/icon_wb_3.png" alt="官方微博">
+            </p>
+        </li>
+    </ul>
+    <div class="footerTxt">
+        <p>
+            <span>增值业务许可证A2.B1.B2-20100001</span>
+            <span>蜀ICP备15012512号-1</span>
+            <span>川网文[2012]0762-026</span>
+        </p>
+        <p>
+            <span>苏网文[2012]0491-023号</span>
+            <span>网络视听许可证0112648号</span>
+            <span>Copyright © 2017 唯爱文化科技有限公司</span>
+        </p>
+        <a id="_pingansec_bottomimagesmall_brand" href="http://si.trustutn.org/info?sn=198170426028200193593&certType=1" target="_blank">
+            <img src = "/picture/brand_bottom_small_3.jpg" />
+        </a>
+    </div>
+</div>
+</div> -->
+<script src="/js/vendor_3.js"></script>
+<script src="/js/webtrends.load_3.js"></script>
+	
+	<script src="/js/music.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+

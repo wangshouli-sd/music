@@ -1,0 +1,118 @@
+
+
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+<meta property="wb:webmaster" content="b685881ad4f09932" />
+<meta property="qc:admins" content="3541556021330724651756367" />
+<meta charset="UTF-8" />
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="format-detection" content="telephone=no" />
+<title>咪咕用户中心门户</title>
+<link rel="icon" href="https://passport.migu.cn/favicon32.ico" mce_href="https://passport.migu.cn/favicon32.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="https://passport.migu.cn/favicon.ico" mce_href="https://passport.migu.cn/favicon.ico" type="image/x-icon"/>
+<link rel="stylesheet" type="text/css" href="https://passport.migu.cn/css/all.css?v=miguidmp_30pV3.7.0">
+</head>
+<body  class="" >
+<input type="hidden" id="J_IsPc"/>
+<input type="hidden" class="j_imgtype" value="0">
+<script type="text/javascript">
+	(function () {
+		var sys = {},
+		ua = navigator.userAgent;
+		sys.iphone = ua.indexOf("iPhone") > -1;
+		sys.ipod = ua.indexOf("iPod") > -1;
+		sys.ipad = ua.indexOf("iPad") > -1;
+		sys.nokiaN = ua.indexOf("NokiaN") > -1;
+		/Win(?:dows )?([^do]{2})/.test(ua);
+		sys.winMobile = /^CE|Ph$/.test(RegExp["$1"]);
+		sys.ios = navigator.platform.indexOf("Mac") == 0 && ua.indexOf("Mobile") > -1;
+		sys.android = ua.indexOf("Android") > -1;
+		
+		var isNoPC = sys.iphone || sys.ipod || sys.ipad || sys.nokiaN || sys.winMobile || sys.ios || sys.android;
+		document.getElementById("J_IsPc").value = isNoPC ? "0" : "1";
+	})();
+
+</script>
+<script type="text/javascript">
+	/*if (document.getElementById("J_IsPc").value==1) {
+
+		}else{
+			
+		}*/
+		document.write('<input type="hidden" id="J_AgreeHref" value="https://passport.migu.cn/portal/protocol"/>');
+	
+	
+</script>
+<div class="header">
+<div class="pager clearfix">
+<div class="logo">
+<a href=" https://passport.migu.cn/portal " class="logo-one"></a>
+</div>
+<div class="login">
+<a href="javascript:;" class="J_Login" id="J_LoginBtn">登录</a>
+<script type="text/javascript" src="https://passport.migu.cn/popup/login?sourceid=100001"></script>
+<q></q>
+<a href="https://passport.migu.cn/portal/user/register/msisdn">注册</a>
+<script type="text/javascript" src="https://passport.migu.cn/login/thirdpart/bindmsisdn?tpsessionid="></script>
+</div>
+</div>
+</div>
+		<input type="hidden" name="dispatcher" id="dispatcher-admin" value="pageError"/>
+		<div class="bodier pageerror">
+			<div class="pager">
+				<div class="content">
+					<h1 class="titler clearfix"><q class="t-wonder"></q>页面出错</h1>
+					<div class="page-error clearfix">
+						<div class="error-icon"></div>
+						<div class="error-con J_ErrorCon">
+							<p>对不起，目标页面暂时无法访问！</p>
+							<p><span id="J_PageErrorSec">5</span>秒钟后进入网站首页……</p>
+							<p class="gray">如果您的浏览器没有跳转<a href="https://passport.migu.cn/portal">请点这里&gt;&gt;</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+<div class="footer">
+<div class="pager">
+<div class="con clearfix">
+<dl>
+<dt>关于咪咕</dt>
+<dd>
+<a href="http://www.migu.cn/1040_2132.html">公司简介</a>
+<a href="http://www.migu.cn/1040_2133.html">帮助中心</a>
+</dd>
+</dl>
+<dl>
+<dt>相关链接</dt>
+<dd>
+<a href="https://passport.migu.cn/portal/guide" target="_blank">用户指南</a>
+<a href="https://passport.migu.cn/portal/guide#J_guide-href" target="_blank">常见问题</a>
+</dd>
+</dl>
+<dl>
+<dt>友情链接</dt>
+<dd>
+<a href="http://www.10086.cn" target="_blank">移动门户</a>
+</dd>
+</dl>
+<dl>
+<dt>更多服务</dt>
+<dd>
+</dd>
+</dl>
+</div>
+<p class="copyright clearfix">
+    <span>蜀ICP备15012512号-1 © 2016 咪咕文化科技有限公司</span>
+    </p>
+</div>
+</div>
+<script type="text/javascript" src="https://passport.migu.cn/user/remind"></script>
+<script type="text/javascript" id="J_NavTip" src="https://passport.migu.cn/user/nav"></script>
+
+<script type="text/javascript" src="https://passport.migu.cn/js/seajs/base.min.js?v=miguidmp_30pV3.7.0" id="seajsFile"></script>
+</body>
+</html>

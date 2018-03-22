@@ -1,0 +1,38 @@
+
+
+a{
+	text-decoration:none;
+}
+
+
+.banbenhao{
+	width:960px;
+	height:110px;
+	border-top:1px solid #C2D5E3;
+	margin:0 auto;
+	margin-top:10px;
+	overflow:hidden;
+	
+}
+.banben1{
+	float:left;
+	margin-top:10px;
+	
+}
+.banben2{
+	float:right;
+	margin-top:10px;
+}
+
+.pow2{
+	margin-top:5px;
+
+}
+
+.tim{
+	margin-top:5px;
+
+}
+.jc{
+	margin-left:35px;
+}

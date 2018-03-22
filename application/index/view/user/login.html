@@ -1,0 +1,247 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+<meta property="wb:webmaster" content="b685881ad4f09932" />
+<meta property="qc:admins" content="3541556021330724651756367" />
+<meta charset="UTF-8" />
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="format-detection" content="telephone=no" />
+<title>唯爱用户中心门户登录</title>
+
+<!-- <link rel="icon" href="https://passport.migu.cn/favicon32.ico" mce_href="https://passport.migu.cn/favicon32.ico" type="image/x-icon"/> -->
+<!-- <link rel="shortcut icon" href="https://passport.migu.cn/favicon.ico" mce_href="https://passport.migu.cn/favicon.ico" type="image/x-icon"/> -->
+
+
+<link rel="icon" href="#" mce_href="#" type="image/x-icon"/>
+<link rel="shortcut icon" href="#" mce_href="#" type="image/x-icon"/>
+<link rel="stylesheet" type="text/css" href="/login/css/all.css">
+</head>
+
+<body  class="" >
+<input type="hidden" id="J_IsPc"/>
+<input type="hidden" class="j_imgtype" value="0">
+<script type="text/javascript">
+	(function () {
+		var sys = {},
+		ua = navigator.userAgent;
+		sys.iphone = ua.indexOf("iPhone") > -1;
+		sys.ipod = ua.indexOf("iPod") > -1;
+		sys.ipad = ua.indexOf("iPad") > -1;
+		sys.nokiaN = ua.indexOf("NokiaN") > -1;
+		/Win(?:dows )?([^do]{2})/.test(ua);
+		sys.winMobile = /^CE|Ph$/.test(RegExp["$1"]);
+		sys.ios = navigator.platform.indexOf("Mac") == 0 && ua.indexOf("Mobile") > -1;
+		sys.android = ua.indexOf("Android") > -1;
+		
+		var isNoPC = sys.iphone || sys.ipod || sys.ipad || sys.nokiaN || sys.winMobile || sys.ios || sys.android;
+		document.getElementById("J_IsPc").value = isNoPC ? "0" : "1";
+	})();
+
+</script>
+<script type="text/javascript">
+	/*if (document.getElementById("J_IsPc").value==1) {
+
+		}else{
+			
+		}*/
+		document.write('<input type="hidden" id="J_AgreeHref" value="#"/>');
+	
+	
+</script>
+
+
+<div class="header">
+<div class="pager clearfix">
+	<!-- <div class="logo">
+	<a href=" https://passport.migu.cn/portal " class="logo-one"></a>
+	</div> -->
+<div class="login">
+<a href="/index/user/login" class="J_Login" id="J_LoginBtn">登录</a>
+<script type="text/javascript" src="#"></script>
+<q></q>
+<a href="/index/user/register">注册 &nbsp;&nbsp;|</a><a> &nbsp;&nbsp;</a>
+ <a href="/index/user/zhaohui">找回密码</a>
+</div>
+
+
+
+</div>
+</div>
+                    <div class="nav">
+    <div class="pager clearfix">
+            <a href="#">帐号</a>
+             <a href="#">指南</a>
+    </div>
+</div>        		<input type="hidden" name="dispatcher" id="dispatcher-admin" value="regPhone"/>
+		
+		<input type="hidden" class="j_imgdisplay" value="0">
+		
+		<div class="bodier regphone">
+			<div class="pager">
+				<div class="content">
+					<h1 class="titler clearfix"><q class="t-reg"></q>用户登录</h1>
+					
+
+<!-- 登录表单开始 -->
+
+					<form class="former J_ValidForm" method="post" action="login1">
+						<input type="hidden" name="sourceid" value=""/>
+						<input type="hidden" name="relayState" value=""/>
+						<input type="hidden" name="appType" value=""/>
+						<input type="hidden" name="callbackURL" value=""/>
+						
+						
+						
+						<div class="form-item form-pos">
+							<label for="J_Phone">账号</label>
+							<input type="text" class="txt" id="username" name="username" placeholder="请输账号" maxlength="11"  value=""   />
+						</div>
+						
+						
+						
+						
+
+										
+						<div class="form-item">
+							<label for="J_NewPassword">密码</label>
+
+							<input type="password" class="txt"  id="J_NewPassword" placeholder="请输入密码" maxlength="16" name="enpassword"/>
+
+							<!-- <input type="hidden" class="J_RsaPsd" name="enpassword"/> -->
+						</div>
+					
+						<div class="form-item">
+							<div class="strength J_Strength">
+								<p>
+									<span class="level1"></span>
+									<span class="level2"></span>
+									<span class="level3"></span>
+									<span class="brief">密码强度<strong></strong></span>
+								</p>
+								<p><s></s>密码长度为6-16位字符</p>
+						
+							</div>
+						</div>
+						
+						
+						<!-- <div class="form-item J_Imgbox" style="">
+							<label for="J_ImgCode">图形验证码</label>
+							<input type="text" class="txt" id="J_ImgCode" name="graphCaptcha" placeholder="请输入图中的结果" cmcc-ajax="#" maxlength="4"/>
+							<div class="imgcode J_ImgCodeView">
+								<img alt="图形验证码" title="图形验证码" cmcc-ajax="" cmccnum-ajax="#" cmccch-ajax="#"/>
+								<a href="javascript:;">换一张</a>
+							</div>
+						</div> -->
+
+
+
+
+
+
+
+
+<!-- 第三方登录第三方登录-->						
+						
+						<!-- <div class="form-item">
+							<a href=""> <img src="/login/images/qq.png"/></a>
+						</div> -->
+					
+						
+
+					
+						<div class="form-item">
+							<input type="submit" value="登录" class="submit"/>
+						</div>
+					</form>
+
+
+
+ 				<!-- <div class="other-login">
+ 				                  <a><img src="/login/images/qq.png"  title="扣扣登录"/></a>
+ 				            
+ 				                  <span class="clearfix"></span>
+ 				                </div> -->
+
+                <!-- 第三方登陆 -->
+                <div class="other" style="margin-left: 270px;">
+
+                  <!-- 登陆 --><span id="hzy_fast_login"></span>
+                </div>
+
+
+
+
+
+					
+<!-- 登录表单结束-->					
+
+
+
+
+					
+		<iframe id="J_AutoLoginIframe" style="display:none" src=""></iframe>
+				</div>
+				<div class="content J_PageOK" style="display:none;">
+					<h1 class="titler clearfix"><q class="t-reg"></q>用户登录</h1>
+					<div class="right-mark"></div>
+					<div class="note2">
+						<h2>恭喜您，登录成功！</h2>
+					
+					</div>
+					<div class="tc">
+						<a href="" class="submit">确定</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	
+<div class="footer">
+<div class="pager">
+<!-- <div class="con clearfix">
+<dl>
+<dt>关于唯爱</dt>
+<dd>
+<a href="#">帮助中心</a>
+</dd>
+</dl>
+<dl>
+<dt>相关链接</dt>
+<dd>
+<a href="#" target="_blank">用户指南</a>
+<a href="##J_guide-href" target="_blank">常见问题</a>
+</dd>
+</dl>
+<dl>
+<dt>友情链接</dt>
+<dd>
+<a href="http://www.10086.cn" target="_blank">移动门户</a>
+</dd>
+</dl>
+<dl>
+<dt>更多服务</dt>
+<dd>
+</dd>
+</dl>
+</div> -->
+<p class="copyright clearfix">
+    <span>蜀ICP备15012512号-1 © 2016 唯爱文化科技有限公司</span>
+    </p>
+</div>
+</div>
+<script type="text/javascript" src="/login/js/d1b18bf05afd4a788c2fac0b3d78bc2f.js"></script>
+<script type="text/javascript" id="J_NavTip" src="/login/js/1c0051d3a76448529f84fe527ee2cd94.js"></script>
+<!-- 第三方登录的js地址 -->
+<script type="text/javascript" src="http://open.51094.com/user/myscript/15a9668eb16930.html"></script>
+
+<script type="text/javascript" src="/login/js/base.min.js" id="seajsFile"></script>
+</body>
+
+

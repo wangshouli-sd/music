@@ -1,0 +1,371 @@
+body,a,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl{font-size:12px; font-family:微软雅黑;}
+
+
+
+a{
+	text-decoration:none;
+}
+
+ body{
+	  background:-webkit-gradient(linear, 0 0, 0 bottom, from(#D3E8FC), to(rgba(255, 255, 255, 255)));  
+	width:960px;
+	margin:auto;
+} 
+
+.head{
+	
+   
+	width:960px;
+	
+	margin:auto;
+}
+.titleline{
+	width:110px;
+	height:23px;
+}
+
+.titleline .a, .b{
+	line-height:23px;
+}
+
+.logo{
+	width:960px;
+	
+	margin:auto;
+	
+}
+.logotp{
+	margin-top:5px;
+	width:80px; 
+	height:95px;
+	/* float:left; width:85px; height:95px;  */
+	/* background:url(public/img/log.jpg)  no-repeat; */
+	}
+.tianqi{
+
+	margin-left:100px;
+	margin-top:-80px;
+}
+.logo .right{
+	float:right; 
+	margin-top:-60px;
+	
+}
+
+.yonghu{
+	width:350px;
+	height:28px;
+	
+	}
+	
+.yonghu-0{
+	width:46px;
+	height:28px;
+	float:left;
+	}
+	
+.yonghu-1{
+	width:154px;
+	height:28px;
+	float:left;
+	}
+	
+.user{
+	width:149px;
+	height:23px;
+	}
+	
+.yonghu-2{
+	width:86px;
+	height:28px;
+	float:left;
+	border-right:1px solid #A9A9A9;
+	stext-align:center;
+	}
+	
+.yonghu-3{
+	width:58px;
+	height:28px;
+	float:left;
+	text-align:center;
+	}
+
+	
+.mima{
+	width:350px;
+	height:28px;
+	
+	
+}
+.mima-0{
+	width:46px;
+	height:28px;
+	float:left;
+
+}
+.mima-1{
+	width:154px;
+	height:28px;
+	float:left;
+	
+}	
+
+
+.mima-2{
+	width:86px;
+	height:28px;
+	float:left;
+	border-right:1px solid #A9A9A9;
+	text-align:center;
+}
+.mima-3{
+	width:58px;
+	height:28px;
+	float:left;
+	text-align:center;
+}
+
+.pwd{
+	width:149px;
+}
+.login{
+	width:60px;
+}
+
+.sousuodaohang{
+	background-color:#2D7ECF;
+	width:960px;
+	height:35px;
+	border-radius:5px 5px 0px 0px;
+	margin-top:15px;
+	
+}
+/*字样式 颜色 */
+.sousuodaohang .sy-1{
+	min-width:0px;
+	line-height:30px;
+	color:white;
+	list-style:none;
+	background-color:#1A55AF;
+	text-align:center;
+	float:left;
+}
+
+.sousuodaohang .sy-1 a:link{
+	display:block;
+	width:68px;
+	height:33px;
+	color:#fff;
+	font-size:16px;
+	
+	padding:0px 10px 0px 10px;
+}
+.sousuodaohang .sy-1 a:visited{
+	color:#fff;
+	
+}
+/* 点击背景颜色 */
+.sousuodaohang .sy-1 a:hover{
+	color:white;
+	background-color:#256dbd;
+}
+
+
+.sousuodaohang .sy{
+	min-width:0px;
+	line-height:30px;
+	color:white;
+	list-style:none;
+	
+	text-align:center;
+	float:left;
+}
+
+.sousuodaohang .sy a:link{
+	display:block;
+	width:68px;
+	height:33px;
+	color:#fff;
+	font-size:16px;
+	
+	padding:0px 10px 0px 10px;
+}
+.sousuodaohang .sy a:visited{
+	color:#fff;
+	
+}
+.sousuodaohang .sy a:hover{
+	color:white;
+	background-color:#256dbd;
+}
+.fdj{
+	float:left;
+	margin-top:5px;
+	width:40px;
+	height:20px;
+}
+.sousuotiao{
+	
+	background-color:#F5F8F9;
+	width:960px;
+	height:50px;
+
+}
+.keywords{
+	float:left;
+	width:410px;
+	height:35px;
+	margin-top:5px;
+
+}
+.sub{
+	float:left;
+	width:80px;
+	height:35px;
+	margin-top:5px;
+	
+}
+
+.sousuozi{
+	width:140px;
+	overflow:hidden;
+	float:left;
+	padding:15px;
+	
+}
+.rs{
+	float:left;
+	margin-left:2px;
+	
+}
+.hd{
+	float:left;
+	margin-left:5px;
+}
+.jy{
+	float:left;
+	margin-left:5px;
+}
+
+.jc{
+	
+	
+	position:relative;
+	left:15px;
+}
+
+
+
+
+
+
+
+
+
+
+/* denglu */
+
+
+
+.logo .right1{
+	float:right; 
+	margin-top:-50px;
+	margin-right:40px;
+	width:220px;
+	height:50px;
+	
+	
+	
+}
+
+
+.yonghu1{
+	width:350px;
+	height:28px;
+	
+	text-align:center;
+	}
+/* yonghu */
+.user1{
+	float:left;
+	width:10px;
+	height:10px;
+}
+
+.yonghu-01{
+	width:50px;
+	height:16px;
+	float:left;
+	border-right:1px solid #A9A9A9;
+	}
+	
+.yonghu-11{
+	width:40px;
+	height:16px;
+	float:left;
+	border-right:1px solid #A9A9A9;
+	}
+	
+
+	
+.yonghu-21{
+	width:55px;
+	height:16px;
+	float:left;
+	border-right:1px solid #A9A9A9;
+	
+	}
+	
+.yonghu-31{
+	width:35px;
+	height:16px;
+	float:left;
+	text-align:center;
+	}
+/* "yonghu结束 */
+	
+.mima1{
+	width:350px;
+	height:28px;
+	
+	margin-left:8px;
+	text-align:center;
+	
+}
+.mima-01{
+	width:80px;
+	height:16px;
+	float:left;
+	
+	border-right:1px solid #A9A9A9;
+	
+
+}
+.mima-11{
+	width:105px;
+	height:28px;
+	float:left;
+	
+	
+}	
+
+
+.tt1{
+	float:left;
+	margin-top:-60px;
+	margin-left:200px;
+}
+.touxiang1{
+	float:right;
+	margin-right:-40px;
+	margin-top:-50px;
+}
+
+
+
+
+
+
+
+
+

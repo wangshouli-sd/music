@@ -1,0 +1,400 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="keywords" content="音乐 视频 阅读 游戏 动漫 你想要的都在这里">
+	<meta name="description" content="为您打造最新、最全、最in的音乐、视频、 阅读、游戏、动漫的数字内容聚合平台 给您全新的娱乐体验。">
+	<title>唯爱-让今天更有趣</title>
+	<link rel="stylesheet" href="/css/vendor_2.css">
+	<link rel="stylesheet" href="/css/index_2.css">
+
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- 分页引入ajax的js -->
+<script type="text/javascript" src="/ajax.js"></script>
+
+	<!-- <style type="text/css">
+
+		.hotpoint-list{
+
+		}
+
+
+
+	</style> -->
+
+<body class="index-page">
+	<!-- 顶部导航栏 -->
+		
+
+
+
+
+
+
+
+<!-- 头结束 -->
+
+
+
+{include file="index/top" /}
+
+<!-- 这是 轮播图分页的内容 -->
+	<div class="container" style="float：left; width: 450px;height: 50px; margin-left: 500px; margin-top: -40px;">
+	<nav aria-label="Page navigation" id="page" style="text-align: center">
+			  <ul class="pagination">
+				<li>
+				<!--   <a href="#" aria-label="Previous">
+									<span aria-hidden="true">&laquo;</span>
+				</a> -->
+				</li>
+				<li><a href="">1</a></li>
+				<li><a href="">2</a></li>
+				<li><a href="">3</a></li>
+				<li><a href="">4</a></li>
+				<li><a href="">5</a></li>
+				<li><a href="">6</a></li>
+				<!-- <li>
+				  <a href="#" aria-label="Next">
+					<span aria-hidden="true">&raquo;</span>
+				  </a>
+				</li> -->
+			  </ul>
+		</nav>
+		
+	</div>
+<!-- 这是分页的结束 -->
+
+
+
+
+ {foreach $lala as $key=>$value}
+			{if 0 == $value['parentid']}
+	<!-- 内容开始  热点 -->
+	<div class="container" style="margin-top: 40px;">
+
+
+
+	<a href="#" target="_blank" class="index-ad-image" data-stats="KO年兽|^|官网首页-热点|^|0"><img src="/picture/20180122100245022129_2.png" alt=""></a>
+
+
+
+
+
+		<div class="index-container section-hotpoint">
+
+		<!-- 导航下面的小板块的title  -->
+
+			<div class="index-title">			
+				<span class="index-title-icon"><img src="/picture/20180110173756371114_2.png" class="title-icom-image">
+					{$value['bkname']}	
+					
+
+
+
+<!-- 这是小版块分页的内容 -->
+	<!-- <div class="container" style="float：left; width: 450px;height: 50px; margin-left: 2px; margin-top: -50px;">
+	<nav aria-label="Page navigation" id="page" style="text-align: center" name="table">
+			  <ul class="pagination">
+				<li>
+			<a href="#" aria-label="Previous" id="a">
+				<span aria-hidden="true">&laquo;</span>
+			</a> 
+				</li>
+				<li><a href="">1</a></li>
+				<li><a href="">2</a></li>
+				<li><a href="">3</a></li>
+				
+							 <li>
+				<a href="#" aria-label="Next" id="a">
+					<span aria-hidden="true">&raquo;</span>
+				</a>
+	
+				</li> 
+			  </ul>
+		</nav>
+		
+	</div> -->
+
+<script type="text/javascript">
+	var oTable = document.getElementById('table');
+	var aA = document.getElementsByTagName('a');
+	ajax({
+		method:'get',
+		url:'fenye',
+		async:true,
+		data:{page:1},
+		success:success
+
+	});
+	function success(data)
+	{
+		//z这个data是啥玩意？是不是就是list.php得到的数据
+		oTable.innerHTML = '';
+		//转化为js的对象
+		var obj = JSON.parse(data);
+		for (var i in obj.data) {
+			//创建tr
+			var oTr = document.createElement('tr');
+			//创建td
+			var oTd1 = document.createElement('td');
+			//创建td
+			var oTd2 = document.createElement('td');
+			// 给每个td赋值
+			oTd1.innerHTML = obj.data[i].id;
+			oTd2.innerHTML = obj.data[i].name;
+			//然后再将td放到tr里面 //
+			oTr.appendChild(oTd1);
+			oTr.appendChild(oTd2);
+			oTable.appendChild(oTr);
+		}
+		//通过obj.allPage依次给上面每个a标签的href属性设置
+		var oPage =  obj.allPage;
+		var i = 0;
+		for (var name in oPage) {
+			//console.log(name);
+			aA[i].href = 'javascript:test(\'' +oPage[name] +'\')';
+			i++;
+		}
+	}
+	function test(url)
+	{
+		ajax({
+			method:'get',
+			url:url,
+			async:true,
+			data:null,
+			success:success
+		});
+	}
+	</script>
+
+<!-- 这是ajax分页 -->
+
+
+
+
+
+
+<!-- 这是分页的结束 -->
+
+
+
+
+
+				</span>			
+			</div>
+<!-- 结束 -->
+
+
+<!-- 第一条的板块内容 -->
+			<div class="tab-content">
+				<div class="tab-item on">			 
+					<ul class="hotpoint-list">
+					 {foreach $shi6 as $k=>$v}
+					 
+					 {if $value['cid'] == $v['dabankuai']}
+					 <div class="{$i++}"></div>
+					 {if $i<=8}
+					 			
+						<li>
+							<a href="/index/video/bofang?vid={$v['vid']}" target="_blank" data-stats="电影红海致敬海军-《军港之夜》|^|官网首页-热点|^|0">
+									<!-- 便利板块图片 -->
+								<div class="thumb"><img src="{$v['vimg']}" alt=""></div>
+								
+								<div class="desc"><span title="电影红海致敬海军-《军港之夜》">{$v['title']}</span></div>
+							</a>
+						</li>
+						{/if}
+						{/if}
+					 {/foreach}
+<div class="{$i = 0}"></div>
+					</ul>
+				
+				</div>
+			</div>
+<!-- 版块内容结束 -->
+			
+			
+		
+		</div>
+	</div>
+	{/if}
+				{/foreach}
+
+
+
+
+
+	<!-- 音乐 -->
+<!-- 	<div class="container">
+	<div class="index-container section-music J_TabsConainer">
+		<div class="index-title">
+			<span class="index-title-icon"><img src="/picture/20180110173648362026_2.png" class="title-icom-image"><a href="http://www.migu.cn/music.html">音乐</a></span>
+			
+			<div class="tab-btn">
+			
+				
+					<a href="http://www.migu.cn/music.html" class="tab-btn-item J_TabsBtn on">
+						<span class="text">最新</span>
+					</a>
+				
+	
+					<a href="http://www.migu.cn/music.html" class="tab-btn-item J_TabsBtn ">
+						<span class="text">歌单</span>
+					</a>
+				
+				
+			</div>
+			
+			<a href="http://www.migu.cn/music.html" class="index-more J_TabsMore" target="_blank">更多</a>
+			<div class="index-download">
+				<span>唯爱音乐APP</span>
+				<i></i>
+				<img class="qrcode" src="/picture/qrcode-music_2.png" alt="扫码下载唯爱音乐">
+			</div>
+		</div>
+		<div class="tab-content">
+		
+			<div class="tab-item J_TabsItem on">
+				<ul class="music-list">
+				
+					
+					资源类型
+					<li>
+						<div class="list-item">
+							<div class="thumb">
+							<a href="javascript:;" class="play js_to_music_play_btn" data-type="song" data-resid="63390508109" title="播放" data-stats="一二三,三二一(Live)|^|官网首页-音乐-最新|^|0">&nbsp;</a>
+							<a href="http://www.migu.cn/music/detail/20000000063390508109.html" class="mask" target="_blank" title="一二三,三二一(Live)" data-stats="一二三,三二一(Live)|^|官网首页-音乐-最新|^|0">&nbsp;</a>
+							<img data-original="http://218.200.230.40:18089/files/resize/album/2018-01-24/5865b3ccddb5414996fee3f3155d7e83.jpg?280x280" src="/picture/music_2.png" alt="">
+							</div>
+							<div class="infos">
+								<div class="title">
+								<a href="http://www.migu.cn/music/detail/20000000063390508109.html" class="title" title="" target="_blank" data-stats="一二三,三二一(Live)|^|官网首页-音乐-最新|^|0">一二三,三二一(Live)</a>
+								</div>
+								<div class="subtitle" title="杨千嬅">
+									杨千嬅
+								</div>
+							</div>
+						</div>
+					</li>
+					
+					
+					
+					
+					</ul>
+			</div>
+			
+			<div class="tab-item J_TabsItem ">
+				<ul class="music-list">
+					
+					歌单类型
+					<li>
+						<div class="list-item">
+							<div class="thumb">
+							<a href="javascript:;" class="play js_to_music_play_btn" data-type="playlist" data-resid="128255201" title="播放" data-stats="#中国味道#过了腊八就是年|^|官网首页-音乐-歌单|^|0">&nbsp;</a>
+							<a href="http://www.migu.cn/user/miguSSO?redirectType=PC_MUSIC&redirectUrl=http%3A%2F%2Fmusic.migu.cn%2Fv2%2Fmusic%2Fsonglist%2F128255201%2Fb7b7f736-7157-4aaa-8e1a-2f9cd8af85b9%3F_from%3Dmigu" class="mask" target="_blank" title="" data-stats="#中国味道#过了腊八就是年|^|官网首页-音乐-歌单|^|0">&nbsp;</a>
+							<img data-original="http://www.migu.cn:8080/12001/upload/graphicLink/20180125101044101285.jpg" src="/picture/music_2.png" alt="">
+							</div>
+							<div class="infos">
+								<div class="title">
+								<a href="http://www.migu.cn/user/miguSSO?redirectType=PC_MUSIC&redirectUrl=http%3A%2F%2Fmusic.migu.cn%2Fv2%2Fmusic%2Fsonglist%2F128255201%2Fb7b7f736-7157-4aaa-8e1a-2f9cd8af85b9%3F_from%3Dmigu" class="title" title="" target="_blank" data-stats="#中国味道#过了腊八就是年|^|官网首页-音乐-歌单|^|0">#中国味道#过了腊八就是年</a>
+								</div>
+								<div class="subtitle" title="远方的你离归家还有多久">
+									远方的你离归家还有多久
+								</div>
+							</div>
+						</div>
+					</li>
+	
+					</ul>
+			</div>
+			
+			
+		</div>
+	</div>
+</div> -->
+
+<!-- 
+	 <div class="container">
+
+
+		<div class="index-container section-sports">
+			<div class="index-title">
+				<span class="index-title-icon"><img src="/picture/20180110173741371588_2.png" class="title-icom-image"><a href="#">最新上传</a></span>
+				<a href="#" class="offical-website" target="_blank">进入官网</a>
+	<a href="#" class="index-more" target="_blank">更多</a>
+				
+			</div>
+			<div class="tab-content">
+				<div class="tab-item on">
+					<ul class="sports-list">
+					
+						<li>
+							<div class="list-item">
+								<a href="http://cmt.myrunners.com/" class="thumb" target="_blank" data-stats="飚山越野.龙腾亚丁越野赛|^|官网首页-运动|^|0">
+									<img src="/picture/20180110173854386276_2.jpg" alt="">
+								</a>
+								<div class="title">
+								<a href="http://cmt.myrunners.com/" title="飚山越野.龙腾亚丁越野赛" target="_blank" data-stats="飚山越野.龙腾亚丁越野赛|^|官网首页-运动|^|0">
+									<span>飚山越野.龙腾亚丁越野赛</span>
+								</a>
+								</div>
+							</div>
+						</li>
+						
+						
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div> 
+ -->
+
+
+
+
+	
+	<!-- 页脚 -->
+	
+
+
+{include file="index/bottom" /}
+
+<script src="/js/vendor_2.js"></script>
+<script src="/js/webtrends.load_2.js"></script>
+
+	<script src="/js/index_2.js"></script>
+</body>
+
+
+<!-- 懒加载 -->
+
+	<!-- <script type="text/javascript">
+			window.onload = window.onscroll = function () {
+				var aImage = document.getElementsByTagName('img');
+				//获取可视区域的高度
+				var height = document.container.clientHeight;
+				//得到卷起的高度
+				var scrollTop = document.container.scrollTop;
+				//console.log(aImage[0].offsetTop);
+				for (var i = 0; i < aImage.length; i++) {
+					var top = aImage[i].offsetTop;
+					if (top <= height + scrollTop) {
+						aImage[i].src = aImage[i].getAttribute('_src');
+					}
+				}
+	
+	
+			};
+	//瀑布流 
+	</script> -->
+
+
+</html>

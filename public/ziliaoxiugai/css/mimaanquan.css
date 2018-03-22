@@ -1,0 +1,154 @@
+ 
+a{
+	text-decoration:none;
+}
+
+ .tou{
+	 width:960px;
+	 height:30px;
+	 margin:auto;
+	 
+	 
+ }
+ 
+ .sz{
+	 float:left;
+	 margin-left:1px;
+ }
+ 
+ 
+ .quanbu{
+	width:960px;
+	height:300px;
+	margin:auto;
+	border:1px solid #CDCDCD;
+}
+
+.left{
+	
+	width:140px;
+	height:300px;
+	background-color:#E8F0F7;
+	float:left;
+}
+
+
+.shezhi{
+	width:138px;
+	height:50px;
+	border-bottom:1px solid #A5A5A5;
+
+}
+
+.shezhi1{
+	width:138px;
+	height:35px;
+	border-bottom:1px solid #A5A5A5;
+	
+}
+
+
+/* 点击前的 背景色和样式*/
+.left .shezhi1{
+	min-width:0px;
+	line-height:30px;
+
+	list-style:none;
+	
+	text-align:center;
+	float:left;
+}
+
+.left .shezhi1 a:link{
+	display:block;
+	width:140px;
+	height:33px;
+	color:#000;
+	font-size:16px;
+	
+	padding:0px 10px 0px 0px;
+}
+/* 点击前字色 */
+.left .shezhi1 a:visited{
+	color:#000;
+	
+}
+/* 点击字和背景颜色 */
+.left .shezhi1 a:hover{
+	color:#000;
+	background-color:white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.zz{
+	
+	line-height:30px;
+	
+	width:140px;
+}
+
+.zzz{
+	line-height:50px;
+	margin-left:20px;
+	font-size:18px;
+	
+}
+
+
+.right{
+	
+	width:800px;
+	height:300px;
+	
+}
+
+
+
+
+
+
+
+
+
+
+.right2{
+	
+	margin-top:50px;
+	margin-left:150px;
+	width:800px;
+	height:250px;
+	
+	border-top:1px solid #000;
+	line-height:30px;
+}
+
+
+.yonghuming{
+	
+	width:600px;
+	
+	height:30;
+	margin-top:5;
+	
+}
+.yonghuzi{
+	float:left;
+	width:100px;
+	font-size:14px;
+	
+
+}
+.yonghuming1{
+	margin-top:10px;
+	margin-left:100px;
+}

@@ -1,0 +1,299 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<form class="form" action="register1" method="post">
+		用户名：<input type="text"  name="username">
+		用户密码：<input type="text" name="pwd">
+		<button>注册</button>
+	</form>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+<meta property="wb:webmaster" content="b685881ad4f09932" />
+<meta property="qc:admins" content="3541556021330724651756367" />
+<meta charset="UTF-8" />
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="format-detection" content="telephone=no" />
+<title>唯爱用户中心门户-手机号注册</title>
+<link rel="icon" href="#" type="/image/x-icon"/>
+<link rel="shortcut icon" href="#" mce_href="#" type="/image/x-icon"/>
+<link rel="stylesheet" type="text/css" href="/login/css/all.css">
+<script type="text/javascript" src="/js/ajax.js"></script>
+</head>
+<body  class="" >
+
+
+<input type="hidden" id="J_IsPc"/>
+<input type="hidden" class="j_imgtype" value="0">
+
+
+
+<!-- <script type="text/javascript">
+	(function () {
+		var sys = {},
+		ua = navigator.userAgent;
+		sys.iphone = ua.indexOf("iPhone") > -1;
+		sys.ipod = ua.indexOf("iPod") > -1;
+		sys.ipad = ua.indexOf("iPad") > -1;
+		sys.nokiaN = ua.indexOf("NokiaN") > -1;
+		/Win(?:dows )?([^do]{2})/.test(ua);
+		sys.winMobile = /^CE|Ph$/.test(RegExp["$1"]);
+		sys.ios = navigator.platform.indexOf("Mac") == 0 && ua.indexOf("Mobile") > -1;
+		sys.android = ua.indexOf("Android") > -1;
+		
+		var isNoPC = sys.iphone || sys.ipod || sys.ipad || sys.nokiaN || sys.winMobile || sys.ios || sys.android;
+		document.getElementById("J_IsPc").value = isNoPC ? "0" : "1";
+	})();
+
+</script> -->
+
+
+<script type="text/javascript">
+	/*if (document.getElementById("J_IsPc").value==1) {
+
+		}else{
+			
+		}*/
+		document.write('<input type="hidden" id="J_AgreeHref" value="#/protocol"/>');
+	
+	
+</script>
+
+
+<div class="header">
+<div class="pager clearfix">
+<div class="logo">
+<a href=" # " class="logo-one"></a>
+</div>
+
+<div class="login">
+<a href="/index/user/login" class="J_Login" id="J_LoginBtn">登录</a>
+<script type="text/javascript" src="#"></script>
+<q></q>
+<a href="/index/user/register">注册 &nbsp;&nbsp;|</a><a> &nbsp;&nbsp;</a>
+ <a href="/index/user/zhaohui">找回密码</a>
+</div>
+
+
+</div>
+</div>
+                    <div class="nav">
+    <div class="pager clearfix">
+            <a href="#" class="selected">帐号</a>
+             <a href="#">指南</a>
+    </div>
+</div>        		<input type="hidden" name="dispatcher" id="dispatcher-admin" value="regPhone"/>
+		
+		<input type="hidden" class="j_imgdisplay" value="0">
+		
+		<div class="bodier regphone">
+			<div class="pager">
+				<div class="content">
+					<h1 class="titler clearfix"><q class="t-reg"></q>用户注册</h1>
+					<div class="note1">
+						<p>您正在使用手机号码注册唯爱帐号。</p>
+						<p>您可以使用该帐号登录唯爱音乐、唯爱视频、唯爱阅读、唯爱游戏、唯爱圈圈等业务。</p>
+						<p>中国移动用户已默认注册和通行证帐号，可直接登录唯爱业务。</p>
+					
+					</div>
+
+
+<!-- 表单开始 -->
+
+
+					<form class="former J_ValidForm" method="post" action="register1">
+						<input type="hidden" name="sourceid" value=""/>
+						<input type="hidden" name="relayState" value=""/>
+						<input type="hidden" name="appType" value=""/>
+						<input type="hidden" name="callbackURL" value=""/>
+
+
+<!-- 用户名 -->
+						<div class="form-item form-pos">
+							<label for="J_Phone">用户名</label>
+							<input type="text" class="txt" id="J_Phone" name="user" placeholder="请输账号" maxlength="11"  value=""   />
+						</div>
+
+
+
+
+<!-- 手机号 -->
+						<div class="form-item form-pos">
+							<label for="J_Phone">QQ号码</label>
+							<input type="text" class="txt" id="J_Phone" name="qq" placeholder="请输入QQ号码" maxlength="11"  value=""   />
+						</div>
+<!-- 手机号 -->
+						<div class="form-item form-pos">
+							<label for="J_Phone">邮箱号码</label>
+							<input type="text" class="txt" id="email" name="email" placeholder="请输入邮箱号码" maxlength="25"  value=""   />
+						</div>
+<!-- 验证码 -->
+
+
+						<!-- <div class="form-item J_Imgbox" style="display:none">
+							<label for="J_ImgCode">图形验证码</label>
+							<input type="text" class="txt" id="J_ImgCode" name="graphCaptcha" placeholder="请输入图中的结果" cmcc-ajax="https://passport.migu.cn/portal/captcha/graph/check" maxlength="4"/>
+							<div class="imgcode J_ImgCodeView">
+								<img alt="图形验证码" title="图形验证码" cmcc-ajax="" cmccnum-ajax="#" cmccch-ajax="#"/>
+								<a href="javascript:;">换一张</a>
+							</div>
+						</div>  -->
+
+	
+
+
+<!-- 手机号 -->
+						<div class="form-item form-pos">
+							<label for="J_Phone">手机号码</label>
+							<input type="text" class="txt" id="phone" name="phone" placeholder="请输入手机号码" maxlength="11"  value=""   />
+						</div>
+
+
+
+<!-- 短信验证码 -->
+						<div class="form-item">
+							<label for="J_MsgCode">短信验证码</label>
+							
+							<input type="text" class="txt txt2" id="J_MsgCode" name="yzm" placeholder="请输入短信验证码" maxlength="6"/>
+
+							<!-- <input type="button" class="btn" value="获取" cmcc-ajax="#" id="getcode" cmcc-rsaAjax="#" /> -->
+
+								<a style="color:#fff;" href='javascript:;'  id="getCode" class="btn btn-info" onclick='getCode()'>获取验证码</a>
+
+
+							<input type="hidden" class="J_MsgCodeID" name="sessionid"/>
+							<span class="Validform_checktip"><q></q></span>
+						</div>
+
+							
+
+
+
+<!-- 事件 -->
+<script src="/js/jquery-1.11.3.min.js"></script>
+
+<script>
+
+		
+		//alert(phone.value);
+	function getCode()
+	{
+		var phone = document.getElementById('phone').value;
+		//alert(phone);
+		if(phone == ''){
+			alert('手机号不能为空');
+		}
+		 ajax({
+          method:'post',
+          url:'/index/user/code',
+          async:true,
+          data:{number:phone},
+          success:success,
+        });
+      function success(data)
+      {
+          //console.log(data);
+          var obj = JSON.parse(data);
+          if (obj.state == 1) {
+            alert('获取验证码成功');
+
+        }
+
+      }
+	}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- 设置密码 -->
+						<div class="form-item">
+							<label for="J_NewPassword">设置密码</label>
+							<input type="password" class="txt" id="J_NewPassword" placeholder="请输入密码" maxlength="16" name="spassword"/>
+							<!-- <input type="hidden" class="J_RsaPsd" name="spassword"/> -->
+						</div>
+
+<!-- 密码强度 -->
+						<div class="form-item">
+							<div class="strength J_Strength">
+								<p>
+									<span class="level1"></span>
+									<span class="level2"></span>
+									<span class="level3"></span>
+									<span class="brief">密码强度<strong></strong></span>
+								</p>
+								<p><s></s>密码长度为6-16位字符</p>
+						
+							</div>
+						</div>
+<!-- 第三方登录 -->						
+						
+						
+
+					<!-- 	<div class="form-item">
+							<a href=""> <img src="/login/images/qq.png"/></a>
+						</div> -->
+	
+
+<!-- 注册按钮 -->
+						<div class="form-item form-nopad">
+							<span class="cb-wrap">
+								<input type="checkbox" class="J_Checkbox" name="xxx" checked="checked" />
+							</span>
+							<a href="javascript:;" class="read-agree J_Dialog">我已阅读并同意相关服务条款</a>
+							<span class="Validform_checktip"><q></q></span>
+						</div>
+						<div class="form-item">
+							<input type="submit" value="注册" class="submit"/>
+						</div>
+						
+						
+					</form> 
+<!-- 结束 -->
+
+
+
+
+
+					<iframe id="J_AutoLoginIframe" style="display:none" src=""></iframe>
+				</div>
+				
+		</div>
+
+
+
+
+		<!-- 在第三方的链接js地址 -->
+
+<script type="text/javascript" src="js/d1b18bf05afd4a788c2fac0b3d78bc2f.js"></script>
+<script type="text/javascript" id="J_NavTip" src="js/1c0051d3a76448529f84fe527ee2cd94.js"></script>
+
+<script type="text/javascript" src="js/base.min.js" id="seajsFile"></script>
+</body>
+</html>
+
+
+
+
+
+
+
